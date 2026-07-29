@@ -1,0 +1,899 @@
+/* =====================================
+   MELODY MUSIC - NEW RELEASES PAGE
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",Arial,sans-serif;
+}
+
+
+body{
+
+    background:#0b0b0f;
+    color:white;
+
+}
+
+
+/* ==========================
+MAIN
+========================== */
+
+.main{
+
+    margin-left:260px;
+    padding:25px;
+    min-height:100vh;
+
+}
+
+
+
+/* ==========================
+HEADER
+========================== */
+
+
+.release-header{
+
+    margin:30px 0 45px;
+
+}
+
+
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#24133a;
+
+    color:#a832ff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}
+
+
+
+.release-header h1{
+
+    margin-top:20px;
+
+    font-size:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+.release-header h1 i{
+
+    color:#a832ff;
+
+}
+
+
+
+.release-header p{
+
+    margin-top:10px;
+
+    color:#999;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* ==========================
+SECTIONS
+========================== */
+
+
+.release-section{
+
+    margin-bottom:45px;
+
+}
+
+
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:24px;
+
+}
+
+
+
+.section-title a{
+
+    color:#a832ff;
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+/* ==========================
+LATEST SONGS
+========================== */
+
+
+.song-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:22px;
+
+}
+
+
+
+.release-card{
+
+    background:#17171f;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+
+
+.release-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#22222d;
+
+}
+
+
+
+.release-card img{
+
+    width:100%;
+
+    height:170px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+
+
+.release-card h3{
+
+    margin-top:12px;
+
+    font-size:17px;
+
+}
+
+
+
+.release-card p{
+
+    color:#999;
+
+    margin-top:5px;
+
+}
+
+
+
+.release-card button{
+
+    position:absolute;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#a832ff;
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================
+ALBUM GRID
+========================== */
+
+
+.album-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+
+    gap:22px;
+
+}
+
+
+
+.album-card{
+
+    background:#17171f;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+
+
+.album-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.album-card img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+
+
+.album-card h3{
+
+    margin-top:15px;
+
+}
+
+
+
+.album-card p{
+
+    color:#999;
+
+    margin-top:5px;
+
+}
+
+
+
+
+
+/* ==========================
+ARTISTS
+========================== */
+
+
+.artist-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.artist-card{
+
+    background:#17171f;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+
+
+.artist-card img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+.artist-card h3{
+
+    margin-top:15px;
+
+}
+
+
+
+.artist-card p{
+
+    color:#999;
+
+}
+
+
+
+
+
+/* ==========================
+COUNTRIES
+========================== */
+
+
+.country-release{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.country-card{
+
+    background:#17171f;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+
+
+.country-card span{
+
+    font-size:35px;
+
+}
+
+
+
+.country-card h3{
+
+    margin-top:10px;
+
+}
+
+
+
+.country-card p{
+
+    color:#999;
+
+    margin-top:5px;
+
+}
+
+
+
+
+
+/* ==========================
+TRACK LIST
+========================== */
+
+
+.track-list{
+
+    background:#16161d;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+
+
+.track-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:15px 20px;
+
+    border-bottom:1px solid #252530;
+
+}
+
+
+
+.track-item:last-child{
+
+    border-bottom:none;
+
+}
+
+
+
+.track-item:hover{
+
+    background:#20202a;
+
+}
+
+
+
+.track-item img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+}
+
+
+
+.track-info{
+
+    flex:1;
+
+}
+
+
+
+.track-info h3{
+
+    font-size:16px;
+
+}
+
+
+
+.track-info p{
+
+    color:#999;
+
+}
+
+
+
+.track-item span{
+
+    color:#aaa;
+
+}
+
+
+
+.track-item button{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#a832ff;
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================
+MOODS
+========================== */
+
+
+.mood-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+
+
+.mood-tags span{
+
+    background:#17171f;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+}
+
+
+
+.mood-tags span:hover{
+
+    background:#a832ff;
+
+}
+
+
+
+
+
+/* ==========================
+EDITOR PICKS
+========================== */
+
+
+.editor-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.editor-card{
+
+    background:#17171f;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.editor-card img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:15px;
+
+    object-fit:cover;
+
+}
+
+
+
+.editor-card button{
+
+    margin-top:15px;
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#a832ff;
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================
+COMING SOON
+========================== */
+
+
+.coming-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.coming-card{
+
+    background:#17171f;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+
+
+.coming-card i{
+
+    font-size:35px;
+
+    color:#a832ff;
+
+}
+
+
+
+.coming-card p{
+
+    color:#999;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+/* ==========================
+SUBSCRIBE
+========================== */
+
+
+.subscribe-box{
+
+    background:linear-gradient(135deg,#7020ff,#a832ff);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.subscribe-box i{
+
+    font-size:35px;
+
+}
+
+
+
+.subscribe-box p{
+
+    margin-top:8px;
+
+}
+
+
+
+.subscribe-box button{
+
+    padding:14px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:#7020ff;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* ==========================
+MOBILE
+========================== */
+
+
+@media(max-width:900px){
+
+
+.main{
+
+    margin-left:0;
+
+}
+
+
+
+.release-header h1{
+
+    font-size:32px;
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.main{
+
+    padding:20px;
+
+}
+
+
+
+.release-header h1{
+
+    font-size:28px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:20px;
+
+}
+
+
+
+.song-grid,
+.album-grid,
+.artist-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.editor-card{
+
+    flex-direction:column;
+
+}
+
+
+
+.subscribe-box{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    text-align:center;
+
+}
+
+
+
+}
+
+
+
+@media(max-width:450px){
+
+
+.song-grid,
+.album-grid,
+.artist-grid,
+.country-release{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.track-item span{
+
+    display:none;
+
+}
+
+
+
+}
+

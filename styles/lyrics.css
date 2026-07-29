@@ -1,0 +1,558 @@
+/* =====================================
+   MELODY MUSIC - LYRICS PAGE CSS
+===================================== */
+
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    background:#0b0b0f;
+    color:white;
+
+}
+
+
+
+
+/* ===============================
+MAIN CONTENT
+================================ */
+
+
+.main{
+
+    margin-left:260px;
+
+    padding:25px;
+
+    min-height:100vh;
+
+}
+
+
+
+/* ===============================
+PAGE HEADER
+================================ */
+
+
+.page-header{
+
+    margin:30px 0;
+
+    background:#16161d;
+
+    padding:25px;
+
+    border-radius:20px;
+
+}
+
+
+
+.page-header h1{
+
+    font-size:32px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+.page-header i{
+
+    color:#a832ff;
+
+}
+
+
+
+.page-header p{
+
+    color:#999;
+
+    margin-top:8px;
+
+}
+
+
+
+
+
+/* ===============================
+LYRICS CARD
+================================ */
+
+
+.lyrics-card{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:25px;
+
+    background:#15151c;
+
+    padding:25px;
+
+    border-radius:25px;
+
+}
+
+
+
+
+
+/* ===============================
+SONG INFO
+================================ */
+
+
+.song{
+
+    text-align:center;
+
+}
+
+
+
+.song img{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.5);
+
+}
+
+
+
+.song h2{
+
+    margin-top:20px;
+
+    font-size:24px;
+
+}
+
+
+
+.song p{
+
+    color:#999;
+
+    margin-top:5px;
+
+}
+
+
+
+
+
+/* ===============================
+SONG BUTTONS
+================================ */
+
+
+.song-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+
+.song-actions button{
+
+    border:none;
+
+    padding:10px 15px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:#252530;
+
+}
+
+
+
+.song-actions .play-btn{
+
+    background:#a832ff;
+
+}
+
+
+
+.song-actions button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* ===============================
+LYRICS PANEL
+================================ */
+
+
+.lyrics-panel{
+
+    background:#101015;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    height:500px;
+
+    overflow-y:auto;
+
+}
+
+
+
+.lyrics-panel h3{
+
+    margin-bottom:25px;
+
+    color:#a832ff;
+
+}
+
+
+
+.line{
+
+    color:#999;
+
+    font-size:18px;
+
+    line-height:2;
+
+    transition:.3s;
+
+}
+
+
+
+.line.active{
+
+    color:white;
+
+    font-weight:bold;
+
+    transform:scale(1.03);
+
+}
+
+
+
+
+
+/* ===============================
+RELATED SONGS
+================================ */
+
+
+.related-section{
+
+    margin-top:40px;
+
+}
+
+
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:22px;
+
+}
+
+
+
+.section-title a{
+
+    color:#a832ff;
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+.related-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(170px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+
+.related-card{
+
+    background:#17171f;
+
+    padding:12px;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+
+
+.related-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.related-card img{
+
+    width:100%;
+
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+}
+
+
+
+.related-card h4{
+
+    margin-top:10px;
+
+}
+
+
+
+.related-card p{
+
+    color:#999;
+
+    font-size:14px;
+
+    margin-top:5px;
+
+}
+
+
+
+
+
+/* ===============================
+SCROLLBAR
+================================ */
+
+
+.lyrics-panel::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+
+.lyrics-panel::-webkit-scrollbar-thumb{
+
+    background:#a832ff;
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+/* ===============================
+TABLET
+================================ */
+
+
+@media(max-width:900px){
+
+
+.main{
+
+    margin-left:0;
+
+}
+
+
+.lyrics-card{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.song img{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+
+}
+
+
+
+
+
+/* ===============================
+MOBILE
+================================ */
+
+
+@media(max-width:600px){
+
+
+.main{
+
+    padding:15px;
+
+}
+
+
+
+.page-header h1{
+
+    font-size:25px;
+
+}
+
+
+
+.lyrics-card{
+
+    padding:15px;
+
+}
+
+
+
+.song img{
+
+    width:150px;
+
+    height:150px;
+
+}
+
+
+
+.lyrics-panel{
+
+    height:400px;
+
+    padding:18px;
+
+}
+
+
+
+.line{
+
+    font-size:16px;
+
+}
+
+
+
+.song-actions{
+
+    flex-wrap:wrap;
+
+}
+
+
+.related-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.related-card img{
+
+    height:110px;
+
+}
+
+
+}
+
+
+
+@media(max-width:400px){
+
+
+.related-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}

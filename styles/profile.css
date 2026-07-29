@@ -1,0 +1,814 @@
+/* =====================================
+   MELODY MUSIC - PROFILE PAGE CSS
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",Arial,sans-serif;
+}
+
+
+body{
+
+    background:#0b0b0f;
+    color:#fff;
+
+}
+
+
+.main{
+
+    margin-left:260px;
+    padding:25px;
+    min-height:100vh;
+
+}
+
+
+
+/* ===============================
+PROFILE HEADER
+================================ */
+
+
+.profile-header{
+
+    background:#17171f;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    margin:30px 0 40px;
+
+}
+
+
+
+.cover{
+
+    height:180px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #a832ff,
+        #5514cc
+    );
+
+}
+
+
+
+.profile-info{
+
+    padding:0 30px 30px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-top:-55px;
+
+}
+
+
+
+.profile-avatar{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #17171f;
+
+}
+
+
+
+.user-details{
+
+    flex:1;
+
+}
+
+
+
+.user-details h1{
+
+    font-size:32px;
+
+}
+
+
+
+.user-details p{
+
+    color:#999;
+
+    margin-top:8px;
+
+}
+
+
+
+.bio{
+
+    max-width:500px;
+
+}
+
+
+
+.edit-profile{
+
+    background:#a832ff;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+/* ===============================
+SECTIONS
+================================ */
+
+
+.profile-section{
+
+    margin-bottom:45px;
+
+}
+
+
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:25px;
+
+}
+
+
+
+.section-title a{
+
+    color:#a832ff;
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+/* ===============================
+STATISTICS
+================================ */
+
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.stat-card{
+
+    background:#17171f;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+    background:#20202a;
+
+}
+
+
+
+.stat-card i{
+
+    width:55px;
+
+    height:55px;
+
+    background:#a832ff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    font-size:22px;
+
+}
+
+
+
+.stat-card h2{
+
+    margin-top:15px;
+
+    font-size:28px;
+
+}
+
+
+
+.stat-card p{
+
+    color:#999;
+
+}
+
+
+
+
+
+/* ===============================
+RECENT MUSIC
+================================ */
+
+
+.recent-list{
+
+    background:#17171f;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+
+
+.music-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 20px;
+
+    border-bottom:1px solid #292934;
+
+}
+
+
+
+.music-item:last-child{
+
+    border:none;
+
+}
+
+
+
+.music-item img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+}
+
+
+
+.music-item div{
+
+    flex:1;
+
+}
+
+
+
+.music-item h3{
+
+    font-size:16px;
+
+}
+
+
+
+.music-item p{
+
+    color:#999;
+
+}
+
+
+
+.music-item button{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#a832ff;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* ===============================
+ARTISTS
+================================ */
+
+
+.artists-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.artist-card{
+
+    background:#17171f;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.artist-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+.artist-card img{
+
+    width:100px;
+
+    height:100px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+.artist-card h3{
+
+    margin-top:15px;
+
+}
+
+
+
+.artist-card p{
+
+    color:#999;
+
+}
+
+
+
+
+
+/* ===============================
+PLAYLISTS
+================================ */
+
+
+.playlist-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.playlist-card{
+
+    background:#17171f;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.playlist-card:hover{
+
+    background:#20202a;
+
+}
+
+
+
+.playlist-card img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+}
+
+
+
+.playlist-card p{
+
+    color:#999;
+
+}
+
+
+
+
+
+/* ===============================
+SETTINGS
+================================ */
+
+
+.settings-card{
+
+    background:#17171f;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+
+
+.setting-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:20px;
+
+    border-bottom:1px solid #292934;
+
+    cursor:pointer;
+
+}
+
+
+
+.setting-item:last-child{
+
+    border:none;
+
+}
+
+
+
+.setting-item i:first-child{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#a832ff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+.setting-item div{
+
+    flex:1;
+
+}
+
+
+
+.setting-item p{
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+
+
+
+
+
+/* ===============================
+RESPONSIVE
+================================ */
+
+
+@media(max-width:900px){
+
+
+.main{
+
+    margin-left:0;
+
+}
+
+
+
+.profile-info{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+
+.edit-profile{
+
+    width:100%;
+
+}
+
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.main{
+
+    padding:15px;
+
+}
+
+
+
+.cover{
+
+    height:130px;
+
+}
+
+
+
+.profile-avatar{
+
+    width:100px;
+
+    height:100px;
+
+}
+
+
+
+.user-details h1{
+
+    font-size:25px;
+
+}
+
+
+
+.stats-grid{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+
+
+.music-item img{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+
+
+.playlist-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+}
+
+
+
+@media(max-width:400px){
+
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.setting-item{
+
+    padding:15px;
+
+}
+
+
+
+}
+
+.edit-modal{
+
+display:none;
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.7);
+
+align-items:center;
+justify-content:center;
+
+z-index:999;
+
+}
+
+
+.edit-box{
+
+background:#181818;
+
+padding:25px;
+
+border-radius:15px;
+
+width:90%;
+max-width:400px;
+
+}
+
+
+.edit-box input,
+.edit-box textarea{
+
+width:100%;
+
+padding:12px;
+
+margin:10px 0;
+
+background:#222;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+}
+
+
+
+.edit-box button{
+
+padding:12px;
+
+margin-top:10px;
+
+width:100%;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}

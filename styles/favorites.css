@@ -1,0 +1,586 @@
+/* =====================================
+   MELODY MUSIC - FAVORITES PAGE
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",Arial,sans-serif;
+}
+
+
+body{
+
+    background:#0b0b0f;
+    color:white;
+
+}
+
+
+/* ===============================
+MAIN
+================================ */
+
+.main{
+
+    margin-left:260px;
+    padding:25px;
+    min-height:100vh;
+
+}
+
+
+
+/* ===============================
+PAGE HEADER
+================================ */
+
+
+.page-title{
+
+    margin:25px 0 35px;
+
+}
+
+
+.page-title h1{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    font-size:40px;
+
+}
+
+
+.page-title h1 i{
+
+    color:#a832ff;
+
+}
+
+
+.page-title p{
+
+    color:#999;
+    margin-top:10px;
+
+}
+
+
+
+
+
+/* ===============================
+SECTIONS
+================================ */
+
+
+.favorites-section{
+
+    margin-bottom:45px;
+
+}
+
+
+.section-title{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+.section-title h2{
+
+    font-size:24px;
+
+}
+
+
+.section-title h2 i{
+
+    color:#ff2d55;
+
+}
+
+
+.section-title a{
+
+    color:#a832ff;
+    text-decoration:none;
+
+}
+
+
+
+
+/* ===============================
+FAVORITE SONG LIST
+================================ */
+
+
+.favorite-list{
+
+    background:#15151d;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+
+
+.favorite-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:15px 20px;
+
+    border-bottom:1px solid #252530;
+
+    transition:.3s;
+
+}
+
+
+
+.favorite-item:last-child{
+
+    border-bottom:none;
+
+}
+
+
+
+.favorite-item:hover{
+
+    background:#20202a;
+
+}
+
+
+
+.favorite-item img{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+}
+
+
+
+.favorite-info{
+
+    flex:1;
+
+}
+
+
+
+.favorite-info h3{
+
+    font-size:17px;
+
+}
+
+
+
+.favorite-info p{
+
+    color:#999;
+
+    margin-top:5px;
+
+    font-size:14px;
+
+}
+
+
+
+.favorite-item span{
+
+    color:#aaa;
+
+    font-size:14px;
+
+}
+
+
+
+.play-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#a832ff;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.play-btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+.liked{
+
+    color:#ff2d55;
+
+    font-size:20px;
+
+}
+
+
+
+
+/* ===============================
+ARTISTS
+================================ */
+
+
+.artists-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(170px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.artist-card{
+
+    background:#17171f;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+
+
+.artist-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#22222c;
+
+}
+
+
+
+.artist-card img{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+.artist-card h3{
+
+    margin-top:15px;
+
+}
+
+
+
+.artist-card p{
+
+    color:#999;
+
+    margin-top:5px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* ===============================
+ALBUMS
+================================ */
+
+
+.albums-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(190px,1fr));
+
+    gap:22px;
+
+}
+
+
+
+.album-card{
+
+    background:#17171f;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+
+
+.album-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#22222c;
+
+}
+
+
+
+.album-card img{
+
+    width:100%;
+
+    height:200px;
+
+    border-radius:15px;
+
+    object-fit:cover;
+
+}
+
+
+
+.album-card h3{
+
+    margin-top:15px;
+
+    font-size:17px;
+
+}
+
+
+
+.album-card p{
+
+    color:#999;
+
+    margin-top:6px;
+
+}
+
+
+
+
+
+/* ===============================
+FOOTER SPACE
+================================ */
+
+
+.footer{
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+/* ===============================
+MOBILE
+================================ */
+
+
+@media(max-width:900px){
+
+
+.main{
+
+    margin-left:0;
+
+    padding:20px;
+
+}
+
+
+
+.page-title h1{
+
+    font-size:32px;
+
+}
+
+
+
+.favorite-item img{
+
+    width:55px;
+
+    height:55px;
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.section-title h2{
+
+    font-size:20px;
+
+}
+
+
+
+.favorite-item{
+
+    gap:12px;
+
+    padding:12px;
+
+}
+
+
+
+.favorite-item span{
+
+    display:none;
+
+}
+
+
+
+.favorite-item img{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+
+
+.play-btn{
+
+    width:35px;
+
+    height:35px;
+
+}
+
+
+
+.artists-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.artist-card img{
+
+    width:90px;
+
+    height:90px;
+
+}
+
+
+
+.albums-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.album-card img{
+
+    height:130px;
+
+}
+
+
+}
+
+
+
+@media(max-width:400px){
+
+
+.artists-grid,
+.albums-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.favorite-info h3{
+
+    font-size:14px;
+
+}
+
+
+}
+

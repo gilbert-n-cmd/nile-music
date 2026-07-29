@@ -1,0 +1,1502 @@
+/* =====================================
+   MELODY MUSIC - CHARTS PAGE
+   PART 1
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#0b0b0f;
+    color:#fff;
+}
+
+/* ===============================
+MAIN CONTENT
+=============================== */
+
+.main{
+    margin-left:260px;
+    min-height:100vh;
+    padding:25px;
+    background:#0b0b0f;
+}
+
+/* ===============================
+TOP BAR
+=============================== */
+
+.topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.search{
+    flex:1;
+    max-width:500px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#16161d;
+    border-radius:12px;
+    padding:12px 18px;
+}
+
+.search i{
+    color:#999;
+}
+
+.search input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:#fff;
+    font-size:15px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.profile img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.profile span{
+    font-size:14px;
+    font-weight:600;
+}
+
+/* ===============================
+HEADER
+=============================== */
+
+.charts-header{
+    margin-bottom:40px;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#1d1d27;
+    color:#a832ff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.charts-header h1{
+    font-size:42px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.charts-header h1 i{
+    color:#a832ff;
+}
+
+.charts-header p{
+    margin-top:15px;
+    color:#999;
+    line-height:1.7;
+    max-width:700px;
+}
+
+/* ===============================
+SECTIONS
+=============================== */
+
+.charts-section{
+    margin-bottom:45px;
+}
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.section-title h2{
+    font-size:26px;
+}
+
+.section-title a{
+    text-decoration:none;
+    color:#a832ff;
+    font-size:15px;
+    transition:.3s;
+}
+
+.section-title a:hover{
+    color:#fff;
+}
+
+/* ===============================
+TOP 10 SONGS
+=============================== */
+
+.charts-list{
+    background:#16161d;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.chart-row{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 20px;
+    border-bottom:1px solid #25252f;
+    transition:.3s;
+}
+
+.chart-row:last-child{
+    border-bottom:none;
+}
+
+.chart-row:hover{
+    background:#20202a;
+}
+
+.rank{
+    width:40px;
+    min-width:40px;
+    text-align:center;
+    font-size:22px;
+    font-weight:700;
+    color:#a832ff;
+}
+
+.chart-row img{
+    width:65px;
+    height:65px;
+    object-fit:cover;
+    border-radius:12px;
+    flex-shrink:0;
+}
+
+.song-info{
+    flex:1;
+}
+
+.song-info h3{
+    font-size:17px;
+    margin-bottom:4px;
+}
+
+.song-info p{
+    font-size:14px;
+    color:#999;
+}
+
+.chart-row span{
+    color:#aaa;
+    font-size:14px;
+    margin-right:10px;
+}
+
+.play-btn{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#a832ff;
+    color:#fff;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+}
+
+.play-btn:hover{
+    background:#9225f2;
+    transform:scale(1.08);
+}
+
+/* ===============================
+GLOBAL CHART CARDS
+=============================== */
+
+.chart-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.chart-card{
+    background:#17171f;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.chart-card:hover{
+    transform:translateY(-8px);
+    background:#20202a;
+}
+
+.chart-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.chart-card h3{
+    font-size:22px;
+    margin:18px 18px 10px;
+}
+
+.chart-card p{
+    color:#999;
+    line-height:1.6;
+    margin:0 18px 18px;
+}
+
+.chart-card button{
+    margin:0 18px 20px;
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    background:#a832ff;
+    color:#fff;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.chart-card button i{
+    margin-right:8px;
+}
+
+.chart-card button:hover{
+    background:#9225f2;
+}/* =====================================
+   MELODY MUSIC - CHARTS PAGE
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", Arial, sans-serif;
+}
+
+body{
+    background:#0b0b0f;
+    color:#fff;
+}
+
+.main{
+    margin-left:260px;
+    min-height:100vh;
+    padding:25px;
+    background:#0b0b0f;
+}
+
+/* ===============================
+PAGE HEADER
+=============================== */
+
+.page-title{
+    margin:25px 0 35px;
+}
+
+.page-title h1{
+    font-size:40px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.page-title h1 i{
+    color:#a832ff;
+}
+
+.page-title p{
+    color:#999;
+    margin-top:10px;
+    font-size:16px;
+}
+
+/* ===============================
+CHART SECTIONS
+=============================== */
+
+.charts-section{
+    margin-bottom:45px;
+}
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.section-title h2{
+    font-size:24px;
+}
+
+.section-title a{
+    text-decoration:none;
+    color:#a832ff;
+    font-size:15px;
+}
+
+.section-title a:hover{
+    color:#fff;
+}
+
+/* ===============================
+TOP 3 CARDS
+=============================== */
+
+.top-three{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.top-card{
+    background:#16161d;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.top-card:hover{
+    transform:translateY(-8px);
+    background:#20202a;
+}
+
+.top-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.top-card .info{
+    padding:18px;
+}
+
+.top-card h3{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.top-card p{
+    color:#999;
+}
+
+.rank-badge{
+    position:absolute;
+    margin:15px;
+    background:#a832ff;
+    color:#fff;
+    padding:8px 15px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+/* ===============================
+CHART LIST
+=============================== */
+
+.chart-list{
+    background:#15151c;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.chart-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 20px;
+    border-bottom:1px solid #24242d;
+    transition:.3s;
+}
+
+.chart-item:last-child{
+    border-bottom:none;
+}
+
+.chart-item:hover{
+    background:#202029;
+}
+
+.rank{
+    width:35px;
+    text-align:center;
+    color:#a832ff;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.chart-item img{
+    width:65px;
+    height:65px;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+.chart-info{
+    flex:1;
+}
+
+.chart-info h3{
+    font-size:17px;
+}
+
+.chart-info p{
+    color:#999;
+    margin-top:5px;
+}
+
+.duration{
+    color:#aaa;
+    font-size:14px;
+}
+
+.chart-item button{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#a832ff;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.chart-item button:hover{
+    transform:scale(1.08);
+}
+
+/* ===============================
+ALBUM GRID
+=============================== */
+
+.albums-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:22px;
+}
+
+.album-card{
+    background:#17171f;
+    padding:15px;
+    border-radius:18px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.album-card:hover{
+    transform:translateY(-8px);
+    background:#21212c;
+}
+
+.album-card img{
+    width:100%;
+    height:200px;
+    border-radius:15px;
+    object-fit:cover;
+}
+
+.album-card h3{
+    margin-top:15px;
+    font-size:17px;
+}
+
+.album-card p{
+    margin-top:6px;
+    color:#999;
+}
+
+/* ===============================
+ARTISTS
+=============================== */
+
+.artists-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:25px;
+}
+
+.artist-card{
+    background:#17171f;
+    padding:20px;
+    border-radius:18px;
+    text-align:center;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.artist-card:hover{
+    transform:translateY(-8px);
+    background:#20202a;
+}
+
+.artist-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:auto;
+}
+
+.artist-card h3{
+    margin-top:15px;
+}
+
+.artist-card p{
+    color:#999;
+    margin-top:5px;
+}
+
+/* ===============================
+PLAYLISTS
+=============================== */
+
+.playlists-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:22px;
+}
+
+.playlist-card{
+    background:#17171f;
+    padding:15px;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.playlist-card:hover{
+    transform:translateY(-8px);
+    background:#21212c;
+}
+
+.playlist-card img{
+    width:100%;
+    height:180px;
+    border-radius:15px;
+    object-fit:cover;
+}
+
+.playlist-card h3{
+    margin-top:14px;
+}
+
+.playlist-card p{
+    color:#999;
+    margin-top:5px;
+}
+
+/* ===============================
+RESPONSIVE
+=============================== */
+
+@media(max-width:900px){
+
+.main{
+    margin-left:0;
+    padding:20px;
+}
+
+.page-title h1{
+    font-size:32px;
+}
+
+.chart-item{
+    gap:12px;
+    padding:15px;
+}
+
+.chart-item img{
+    width:55px;
+    height:55px;
+}
+
+.duration{
+    display:none;
+}
+
+}
+
+@media(max-width:768px){
+
+.top-three,
+.albums-grid,
+.artists-grid,
+.playlists-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:500px){
+
+.page-title h1{
+    font-size:28px;
+}
+
+.page-title p{
+    font-size:14px;
+}
+
+.top-three,
+.albums-grid,
+.artists-grid,
+.playlists-grid{
+    grid-template-columns:1fr;
+}
+
+.chart-item{
+    padding:12px;
+}
+
+.chart-item img{
+    width:50px;
+    height:50px;
+}
+
+.chart-info h3{
+    font-size:15px;
+}
+
+.chart-info p{
+    font-size:13px;
+}
+
+.rank{
+    font-size:18px;
+}
+
+.chart-item button{
+    width:36px;
+    height:36px;
+}
+
+}
+
+.chart-list{
+    background:#15151c;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.chart-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 20px;
+    border-bottom:1px solid #24242d;
+}
+
+.chart-item:last-child{
+    border-bottom:none;
+}
+
+.rank{
+    width:40px;
+    min-width:40px;
+    text-align:center;
+    font-size:22px;
+    font-weight:700;
+    color:#a832ff;
+}
+
+.chart-item img{
+    width:60px;
+    height:60px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+.chart-info{
+    flex:1;
+}
+
+.chart-info h3{
+    margin:0;
+    font-size:17px;
+}
+
+.chart-info p{
+    margin-top:4px;
+    color:#999;
+    font-size:14px;
+}
+
+.duration{
+    margin-right:15px;
+    color:#aaa;
+}
+
+.chart-item button{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#a832ff;
+    color:#fff;
+    cursor:pointer;
+}
+/* ===============================
+TOP 10 SONGS
+=============================== */
+
+.charts-list{
+    background:#15151c;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.chart-row{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 20px;
+    border-bottom:1px solid #24242d;
+    transition:.3s;
+}
+
+.chart-row:last-child{
+    border-bottom:none;
+}
+
+.chart-row:hover{
+    background:#202029;
+}
+
+.rank{
+    width:40px;
+    min-width:40px;
+    text-align:center;
+    color:#a832ff;
+    font-size:22px;
+    font-weight:700;
+}
+
+.chart-row img{
+    width:65px;
+    height:65px;
+    object-fit:cover;
+    border-radius:12px;
+    flex-shrink:0;
+}
+
+.song-info{
+    flex:1;
+}
+
+.song-info h3{
+    margin:0;
+    font-size:17px;
+    color:#fff;
+}
+
+.song-info p{
+    margin-top:5px;
+    color:#999;
+    font-size:14px;
+}
+
+.chart-row span{
+    color:#aaa;
+    font-size:14px;
+    margin-right:15px;
+}
+
+.play-btn{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#a832ff;
+    color:#fff;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+}
+
+.play-btn:hover{
+    background:#8c1eff;
+    transform:scale(1.08);
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .chart-row{
+        padding:14px;
+        gap:12px;
+    }
+
+    .chart-row img{
+        width:55px;
+        height:55px;
+    }
+
+    .chart-row span{
+        display:none;
+    }
+
+    .song-info h3{
+        font-size:15px;
+    }
+
+    .song-info p{
+        font-size:13px;
+    }
+
+    .play-btn{
+        width:36px;
+        height:36px;
+    }
+}
+
+/* =====================================
+   MELODY MUSIC - CHARTS PAGE
+   PART 2
+   Top 100 • Albums • Artists • Playlists
+===================================== */
+
+/* ===============================
+TOP 100 GLOBAL
+=============================== */
+
+.chart-list{
+    background:#16161d;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.chart-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 20px;
+    border-bottom:1px solid #25252f;
+    transition:.3s;
+}
+
+.chart-item:last-child{
+    border-bottom:none;
+}
+
+.chart-item:hover{
+    background:#20202a;
+}
+
+.chart-item .rank{
+    width:40px;
+    min-width:40px;
+    text-align:center;
+    font-size:22px;
+    font-weight:700;
+    color:#a832ff;
+}
+
+.chart-item img{
+    width:65px;
+    height:65px;
+    border-radius:12px;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.chart-info{
+    flex:1;
+}
+
+.chart-info h3{
+    font-size:17px;
+    margin-bottom:4px;
+}
+
+.chart-info p{
+    color:#999;
+    font-size:14px;
+}
+
+.duration{
+    color:#aaa;
+    font-size:14px;
+    margin-right:15px;
+}
+
+.chart-item button{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#a832ff;
+    color:#fff;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+}
+
+.chart-item button:hover{
+    background:#9225f2;
+    transform:scale(1.08);
+}
+
+/* ===============================
+TOP ALBUMS
+=============================== */
+
+.albums-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.album-card{
+    background:#17171f;
+    border-radius:18px;
+    padding:15px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.album-card:hover{
+    transform:translateY(-8px);
+    background:#20202a;
+}
+
+.album-card img{
+    width:100%;
+    height:220px;
+    border-radius:15px;
+    object-fit:cover;
+    display:block;
+}
+
+.album-card h3{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.album-card p{
+    margin-top:6px;
+    color:#999;
+    font-size:14px;
+}
+
+/* ===============================
+TOP ARTISTS
+=============================== */
+
+.artists-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.artist-card{
+    background:#17171f;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.artist-card:hover{
+    transform:translateY(-8px);
+    background:#20202a;
+}
+
+.artist-card img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto;
+}
+
+.artist-card h3{
+    margin-top:18px;
+    font-size:18px;
+}
+
+.artist-card p{
+    margin-top:6px;
+    color:#999;
+    font-size:14px;
+}
+
+/* ===============================
+TRENDING PLAYLISTS
+=============================== */
+
+.albums-grid .album-card{
+    position:relative;
+}
+
+.albums-grid .album-card::after{
+    content:"PLAY";
+    position:absolute;
+    top:25px;
+    right:25px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#a832ff;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    font-weight:700;
+    opacity:0;
+    transition:.3s;
+}
+
+.albums-grid .album-card:hover::after{
+    opacity:1;
+}
+
+/* ===============================
+RESPONSIVE
+=============================== */
+
+@media(max-width:900px){
+
+.main{
+    margin-left:0;
+    padding:20px;
+}
+
+.chart-item{
+    gap:14px;
+    padding:15px;
+}
+
+.chart-item img{
+    width:55px;
+    height:55px;
+}
+
+.duration{
+    display:none;
+}
+
+.albums-grid,
+.artists-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.albums-grid,
+.artists-grid{
+    grid-template-columns:1fr;
+}
+
+.chart-item{
+    padding:12px;
+}
+
+.chart-item img{
+    width:50px;
+    height:50px;
+}
+
+.chart-info h3{
+    font-size:15px;
+}
+
+.chart-info p{
+    font-size:13px;
+}
+
+.chart-item button{
+    width:36px;
+    height:36px;
+}
+
+.artist-card img{
+    width:110px;
+    height:110px;
+}
+
+.album-card img{
+    height:200px;
+}
+
+}
+/* =====================================
+   MELODY MUSIC - CHARTS PAGE
+   PART 3
+   FINAL RESPONSIVE & ANIMATIONS
+===================================== */
+
+/* ===============================
+SMOOTH SCROLL
+=============================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===============================
+CUSTOM SCROLLBAR
+=============================== */
+
+::-webkit-scrollbar{
+    width:8px;
+    height:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f0f15;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#a832ff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#9225f2;
+}
+
+/* ===============================
+FADE ANIMATION
+=============================== */
+
+.charts-section{
+    animation:fadeUp .6s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===============================
+CARD HOVER EFFECT
+=============================== */
+
+.chart-card,
+.album-card,
+.artist-card{
+    box-shadow:0 0 0 rgba(0,0,0,0);
+}
+
+.chart-card:hover,
+.album-card:hover,
+.artist-card:hover{
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+/* ===============================
+PLAY BUTTON
+=============================== */
+
+.play-btn,
+.chart-item button{
+
+    transition:.3s ease;
+
+}
+
+.play-btn:hover,
+.chart-item button:hover{
+
+    transform:scale(1.1) rotate(5deg);
+
+}
+
+/* ===============================
+TOPBAR RESPONSIVE
+=============================== */
+
+@media(max-width:900px){
+
+.main{
+    margin-left:0;
+    padding:20px;
+}
+
+.topbar{
+    flex-wrap:wrap;
+}
+
+.search{
+    order:3;
+    width:100%;
+    max-width:100%;
+}
+
+.profile span{
+    display:none;
+}
+
+}
+
+/* ===============================
+TABLET
+=============================== */
+
+@media(max-width:768px){
+
+.charts-header h1{
+    font-size:34px;
+}
+
+.charts-header p{
+    font-size:15px;
+}
+
+.section-title h2{
+    font-size:22px;
+}
+
+.chart-cards,
+.albums-grid,
+.artists-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.chart-row{
+    gap:12px;
+    padding:15px;
+}
+
+.chart-row img{
+    width:55px;
+    height:55px;
+}
+
+.chart-item img{
+    width:55px;
+    height:55px;
+}
+
+.chart-row span,
+.duration{
+    display:none;
+}
+
+.song-info h3,
+.chart-info h3{
+    font-size:15px;
+}
+
+.song-info p,
+.chart-info p{
+    font-size:13px;
+}
+
+}
+
+/* ===============================
+MOBILE
+=============================== */
+
+@media(max-width:500px){
+
+.main{
+    padding:15px;
+}
+
+.badge{
+    font-size:12px;
+    padding:6px 12px;
+}
+
+.charts-header h1{
+    font-size:28px;
+}
+
+.charts-header p{
+    font-size:14px;
+}
+
+.section-title{
+    margin-bottom:15px;
+}
+
+.section-title h2{
+    font-size:20px;
+}
+
+.chart-cards,
+.albums-grid,
+.artists-grid{
+    grid-template-columns:1fr;
+}
+
+.chart-row,
+.chart-item{
+    padding:12px;
+}
+
+.chart-row img,
+.chart-item img{
+    width:48px;
+    height:48px;
+}
+
+.rank{
+    width:30px;
+    min-width:30px;
+    font-size:18px;
+}
+
+.play-btn,
+.chart-item button{
+    width:35px;
+    height:35px;
+}
+
+.album-card img{
+    height:220px;
+}
+
+.artist-card img{
+    width:100px;
+    height:100px;
+}
+
+}
+
+/* ===============================
+LARGE SCREENS
+=============================== */
+
+@media(min-width:1400px){
+
+.main{
+    max-width:1500px;
+}
+
+.chart-cards{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.albums-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.artists-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+/* ===============================
+FOCUS STATES
+=============================== */
+
+button,
+a,
+input{
+    transition:.3s;
+}
+
+button:focus,
+a:focus,
+input:focus{
+    outline:2px solid #a832ff;
+    outline-offset:2px;
+}
+
+/* ===============================
+IMAGE FIX
+=============================== */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ===============================
+BOTTOM SPACING
+=============================== */
+
+.footer{
+    margin-top:60px;
+}
+.chart-row.active-song,
+.chart-item.active-song{
+
+background:#21152f;
+border-left:4px solid #a832ff;
+
+}
+
+
+.play-btn.playing,
+.chart-item button.playing{
+
+background:#fff;
+color:#a832ff;
+
+}
+
+
+.chart-row img.loaded,
+.chart-item img.loaded{
+
+animation:fadeImage .5s ease;
+
+}
+
+
+@keyframes fadeImage{
+
+from{
+opacity:0;
+transform:scale(.9);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}

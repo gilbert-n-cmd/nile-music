@@ -1,0 +1,685 @@
+/* =====================================
+   MELODY MUSIC - PREMIUM PAGE CSS
+===================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",Arial,sans-serif;
+}
+
+
+body{
+
+    background:#0b0b0f;
+    color:#fff;
+
+}
+
+
+
+.main{
+
+    margin-left:260px;
+    padding:25px;
+    min-height:100vh;
+
+}
+
+
+
+/* ===============================
+PREMIUM HERO
+================================ */
+
+
+.premium-hero{
+
+    margin:30px 0 45px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(168,50,255,.8),
+        rgba(104,28,255,.7)
+    );
+
+    border-radius:25px;
+
+    padding:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+    overflow:hidden;
+
+}
+
+
+
+
+.premium-content{
+
+    max-width:600px;
+
+}
+
+
+
+.premium-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#fff;
+
+    color:#a832ff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+
+.premium-content h1{
+
+    font-size:45px;
+
+    margin:20px 0;
+
+}
+
+
+
+.premium-content p{
+
+    color:#eee;
+
+    line-height:1.7;
+
+    font-size:16px;
+
+}
+
+
+
+.premium-image img{
+
+    width:300px;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+}
+
+
+
+
+.upgrade-btn{
+
+    margin-top:25px;
+
+    background:#fff;
+
+    color:#a832ff;
+
+    border:none;
+
+    padding:14px 25px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.upgrade-btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* ===============================
+SECTION TITLE
+================================ */
+
+
+.premium-section{
+
+    margin-bottom:45px;
+
+}
+
+
+
+.section-title{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+
+
+.section-title p{
+
+    color:#999;
+
+    margin-top:5px;
+
+}
+
+
+
+
+
+/* ===============================
+PLANS
+================================ */
+
+
+.plans-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+
+
+.plan-card{
+
+    background:#17171f;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+
+
+.plan-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#20202a;
+
+}
+
+
+
+.plan-card h3{
+
+    font-size:24px;
+
+}
+
+
+
+.price{
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    margin:20px 0;
+
+}
+
+
+
+.price span{
+
+    font-size:14px;
+
+    color:#999;
+
+}
+
+
+
+.plan-card ul{
+
+    list-style:none;
+
+}
+
+
+
+.plan-card li{
+
+    margin:15px 0;
+
+    color:#ddd;
+
+}
+
+
+
+.plan-card li i{
+
+    color:#a832ff;
+
+    margin-right:10px;
+
+}
+
+
+
+.plan-card .disabled{
+
+    color:#777;
+
+}
+
+
+
+.plan-card button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#a832ff;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* POPULAR PLAN */
+
+
+.plan-card.popular{
+
+    border:2px solid #a832ff;
+
+}
+
+
+
+.popular-tag{
+
+    position:absolute;
+
+    top:-15px;
+
+    right:20px;
+
+    background:#a832ff;
+
+    padding:6px 15px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+}
+
+
+
+
+
+/* ===============================
+BENEFITS
+================================ */
+
+
+.benefits-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.benefit-card{
+
+    background:#17171f;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.benefit-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+.benefit-card i{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#a832ff;
+
+    font-size:25px;
+
+}
+
+
+
+.benefit-card h3{
+
+    margin:15px 0 8px;
+
+}
+
+
+
+.benefit-card p{
+
+    color:#999;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* ===============================
+FAQ
+================================ */
+
+
+.faq-container{
+
+    background:#17171f;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+
+
+.faq-item{
+
+    border-bottom:1px solid #292934;
+
+}
+
+
+
+.faq-question{
+
+    width:100%;
+
+    background:none;
+
+    color:white;
+
+    border:none;
+
+    padding:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+.faq-answer{
+
+    display:none;
+
+    padding:0 20px 20px;
+
+    color:#999;
+
+    line-height:1.6;
+
+}
+
+
+
+.faq-item.active .faq-answer{
+
+    display:block;
+
+}
+
+
+
+
+
+
+/* ===============================
+CTA
+================================ */
+
+
+.premium-cta{
+
+    background:#17171f;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.premium-cta h2{
+
+    font-size:32px;
+
+}
+
+
+
+.premium-cta p{
+
+    color:#999;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+
+/* ===============================
+RESPONSIVE
+================================ */
+
+
+@media(max-width:900px){
+
+
+.main{
+
+    margin-left:0;
+
+}
+
+
+
+.premium-hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+
+.premium-image img{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+.main{
+
+    padding:15px;
+
+}
+
+
+
+.premium-content h1{
+
+    font-size:30px;
+
+}
+
+
+
+.premium-hero{
+
+    padding:25px;
+
+}
+
+
+
+.premium-image img{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:22px;
+
+}
+
+
+
+.plan-card{
+
+    padding:22px;
+
+}
+
+
+
+.premium-cta h2{
+
+    font-size:24px;
+
+}
+
+
+}
+

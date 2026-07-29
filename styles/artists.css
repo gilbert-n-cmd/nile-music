@@ -1,0 +1,754 @@
+/* =====================================
+   MELODY MUSIC - ARTISTS PAGE CSS
+===================================== */
+
+
+/* ===============================
+GLOBAL
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",Arial,sans-serif;
+}
+
+
+body{
+
+    background:#0b0b0f;
+    color:white;
+
+}
+
+
+
+/* ===============================
+MAIN CONTENT
+================================ */
+
+
+.main{
+
+    margin-left:260px;
+    padding:25px;
+    min-height:100vh;
+
+}
+
+
+
+/* ===============================
+ARTISTS HEADER
+================================ */
+
+
+.artists-header{
+
+    padding:30px 0 40px;
+
+}
+
+
+.artists-header .badge{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    background:#1a1028;
+
+    color:#a832ff;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}
+
+
+
+.artists-header h1{
+
+    margin-top:20px;
+
+    font-size:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.artists-header h1 i{
+
+    color:#a832ff;
+
+}
+
+
+
+.artists-header p{
+
+    margin-top:12px;
+
+    color:#999;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* ===============================
+SECTIONS
+================================ */
+
+
+.artists-section{
+
+    margin-bottom:45px;
+
+}
+
+
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:24px;
+
+}
+
+
+
+.section-title a{
+
+    color:#a832ff;
+
+    text-decoration:none;
+
+}
+
+
+
+.section-title a:hover{
+
+    color:white;
+
+}
+
+
+
+
+
+/* ===============================
+ARTIST GRID
+================================ */
+
+
+.artists-grid{
+
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:25px;
+
+
+}
+
+
+
+
+.artist-card{
+
+
+    background:#16161d;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.artist-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#20202a;
+
+}
+
+
+
+.artist-card img{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+.artist-card h3{
+
+    margin-top:15px;
+
+    font-size:18px;
+
+}
+
+
+
+.artist-card p{
+
+    color:#999;
+
+    margin-top:6px;
+
+    font-size:14px;
+
+}
+
+
+
+
+.artist-card button{
+
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#a832ff;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+.artist-card button:hover{
+
+    background:#7d00ff;
+
+}
+
+
+
+
+
+/* ===============================
+ARTIST SONGS
+================================ */
+
+
+.artist-songs{
+
+
+    background:#15151c;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+
+}
+
+
+
+.song-row{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:15px 20px;
+
+    border-bottom:1px solid #24242d;
+
+    transition:.3s;
+
+
+}
+
+
+
+.song-row:last-child{
+
+    border-bottom:none;
+
+}
+
+
+
+.song-row:hover{
+
+    background:#20202a;
+
+}
+
+
+
+.song-row span{
+
+    width:30px;
+
+    font-size:20px;
+
+    color:#a832ff;
+
+    font-weight:bold;
+
+    text-align:center;
+
+}
+
+
+
+.song-row img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:10px;
+
+    object-fit:cover;
+
+}
+
+
+
+.song-row div{
+
+    flex:1;
+
+}
+
+
+
+.song-row h3{
+
+    font-size:16px;
+
+}
+
+
+
+.song-row p{
+
+    margin-top:5px;
+
+    color:#999;
+
+    font-size:14px;
+
+}
+
+
+
+.song-row button{
+
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#a832ff;
+
+    color:white;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+/* ===============================
+RISING ARTISTS
+================================ */
+
+
+.rising-grid{
+
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+
+}
+
+
+
+.rising-card{
+
+
+    background:#17171f;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+
+}
+
+
+
+.rising-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.rising-card img{
+
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+
+}
+
+
+
+.rising-card h3{
+
+    margin-top:15px;
+
+    font-size:16px;
+
+}
+
+
+
+.rising-card p{
+
+    color:#999;
+
+    margin-top:5px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+FOLLOW BOX
+================================ */
+
+
+.follow-box{
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #7020ff,
+    #a832ff
+    );
+
+
+    border-radius:20px;
+
+    padding:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+.follow-box h2{
+
+    font-size:26px;
+
+}
+
+
+
+.follow-box p{
+
+    margin-top:8px;
+
+    color:#eee;
+
+}
+
+
+
+
+.follow-box button{
+
+
+    border:none;
+
+    padding:14px 25px;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:#7020ff;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+/* ===============================
+FOOTER SPACE
+================================ */
+
+
+.footer{
+
+    margin-top:40px;
+
+}
+
+
+
+
+
+
+/* ===============================
+RESPONSIVE
+================================ */
+
+
+@media(max-width:900px){
+
+
+.main{
+
+    margin-left:0;
+
+    padding:20px;
+
+}
+
+
+
+.artists-header h1{
+
+    font-size:32px;
+
+}
+
+
+
+.artist-card img{
+
+    width:120px;
+
+    height:120px;
+
+}
+
+
+
+.follow-box{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:20px;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+.artists-header h1{
+
+    font-size:28px;
+
+}
+
+
+
+.artists-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.artist-card{
+
+    padding:15px;
+
+}
+
+
+
+.artist-card img{
+
+    width:100px;
+
+    height:100px;
+
+}
+
+
+
+.song-row{
+
+    gap:10px;
+
+    padding:12px;
+
+}
+
+
+
+.song-row img{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+
+
+.song-row button{
+
+    width:35px;
+
+    height:35px;
+
+}
+
+
+
+.rising-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.follow-box h2{
+
+    font-size:21px;
+
+}
+
+
+}
+
+
+
+@media(max-width:400px){
+
+
+.artists-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.artists-header p{
+
+    font-size:14px;
+
+}
+
+
+}
+

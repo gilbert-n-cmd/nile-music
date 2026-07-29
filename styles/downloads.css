@@ -1,0 +1,1288 @@
+/* =====================================
+   MELODY MUSIC - DOWNLOADS PAGE
+   FULL CORRECTED VERSION
+===================================== */
+
+
+/* ===============================
+GLOBAL
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", Arial, sans-serif;
+}
+
+
+body{
+
+    background:#0b0b0f;
+    color:#fff;
+
+}
+
+
+
+/* ===============================
+MAIN CONTENT
+================================ */
+
+
+.main{
+
+    margin-left:260px;
+
+    padding:25px;
+
+    min-height:100vh;
+
+}
+
+
+
+/* ===============================
+DOWNLOAD HEADER
+================================ */
+
+
+.downloads-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin:25px 0 35px;
+
+}
+
+
+
+.header-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #a832ff,
+        #6d22ff
+    );
+
+}
+
+
+
+.header-icon i{
+
+    font-size:28px;
+
+}
+
+
+
+.downloads-header h1{
+
+    font-size:34px;
+
+}
+
+
+
+.downloads-header p{
+
+    color:#999;
+
+    margin-top:6px;
+
+    font-size:14px;
+
+}
+
+
+
+/* ===============================
+STORAGE CARD
+================================ */
+
+
+.storage-card{
+
+    background:#16161d;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.storage-card i{
+
+    color:#a832ff;
+
+    font-size:28px;
+
+}
+
+
+
+.storage-card h3{
+
+    margin-top:8px;
+
+    font-size:18px;
+
+}
+
+
+
+.storage-card p{
+
+    color:#999;
+
+    font-size:14px;
+
+    margin-top:5px;
+
+}
+
+
+
+
+.progress{
+
+    width:40%;
+
+    height:8px;
+
+    background:#292933;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress span{
+
+    display:block;
+
+    height:100%;
+
+    width:35%;
+
+    background:#a832ff;
+
+}
+
+
+
+
+
+.storage-card button{
+
+    background:#a832ff;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.storage-card button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* ===============================
+SECTION TITLE
+================================ */
+
+
+.downloads-section{
+
+    margin-bottom:45px;
+
+}
+
+
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:23px;
+
+}
+
+
+
+.section-title a,
+.section-title button{
+
+    background:none;
+
+    border:none;
+
+    color:#a832ff;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* ===============================
+DOWNLOADED SONG LIST
+================================ */
+
+
+.download-list{
+
+    background:#15151c;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+.download-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:14px 18px;
+
+    border-bottom:1px solid #252530;
+
+    transition:.3s;
+
+}
+
+
+
+.download-item:last-child{
+
+    border:none;
+
+}
+
+
+
+.download-item:hover{
+
+    background:#20202a;
+
+}
+
+
+
+/* RANK */
+
+.rank{
+
+    width:35px;
+
+    min-width:35px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#a832ff;
+
+}
+
+
+
+
+
+/* SONG COVER IMAGE */
+
+.download-item img{
+
+    width:55px;
+
+    height:55px;
+
+    min-width:55px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+}
+
+
+
+
+
+.song-info{
+
+    flex:1;
+
+}
+
+
+
+.song-info h3{
+
+    font-size:16px;
+
+    margin-bottom:4px;
+
+}
+
+
+
+.song-info p{
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+
+
+
+
+.download-item span{
+
+    color:#aaa;
+
+    font-size:13px;
+
+}
+
+
+
+/* BUTTONS */
+
+
+.play-btn,
+.remove-btn{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+.play-btn{
+
+    background:#a832ff;
+
+}
+
+
+
+.remove-btn{
+
+    background:#252530;
+
+}
+
+
+
+.remove-btn:hover{
+
+    background:#ff3355;
+
+}
+
+
+/* ===============================
+DOWNLOADED ALBUMS
+================================ */
+
+
+.album-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(150px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+
+
+.album-card{
+
+    background:#17171f;
+
+    padding:12px;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+
+
+.album-card:hover{
+
+    transform:translateY(-6px);
+
+    background:#20202a;
+
+}
+
+
+
+
+
+/* ALBUM COVER SIZE FIX */
+
+.album-card img{
+
+    width:100%;
+
+    height:140px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    display:block;
+
+}
+
+
+
+
+
+.album-card h3{
+
+    font-size:16px;
+
+    margin-top:12px;
+
+}
+
+
+
+.album-card p{
+
+    color:#999;
+
+    font-size:13px;
+
+    margin-top:5px;
+
+}
+
+
+
+
+
+/* ===============================
+RECENT DOWNLOADS
+================================ */
+
+
+.recent-downloads{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:18px;
+
+}
+
+
+
+
+
+.recent-card{
+
+    background:#17171f;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.recent-card:hover{
+
+    background:#20202a;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+.recent-card i{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#a832ff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:18px;
+
+}
+
+
+
+.recent-card h3{
+
+    font-size:15px;
+
+}
+
+
+
+.recent-card p{
+
+    color:#999;
+
+    font-size:13px;
+
+    margin-top:5px;
+
+}
+
+
+
+
+
+/* ===============================
+SIDEBAR PLAYLIST IMAGES
+================================ */
+
+
+.playlist img{
+
+    width:45px;
+
+    height:45px;
+
+    min-width:45px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+/* ===============================
+PROFILE IMAGE
+================================ */
+
+
+.profile img{
+
+    width:40px;
+
+    height:40px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+
+
+
+
+/* ===============================
+FOOTER SPACE
+================================ */
+
+
+.footer{
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+/* ===============================
+TABLET RESPONSIVE
+================================ */
+
+
+@media(max-width:900px){
+
+
+.main{
+
+    margin-left:0;
+
+    padding:20px;
+
+}
+
+
+
+.storage-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+
+
+.progress{
+
+    width:100%;
+
+}
+
+
+
+}
+
+
+
+/* ===============================
+MOBILE RESPONSIVE
+================================ */
+
+
+@media(max-width:600px){
+
+
+.main{
+
+    padding:15px;
+
+}
+
+
+
+.downloads-header h1{
+
+    font-size:28px;
+
+}
+
+
+
+.downloads-header p{
+
+    font-size:13px;
+
+}
+
+
+
+
+.storage-card{
+
+    padding:18px;
+
+}
+
+
+
+
+.download-item{
+
+    gap:10px;
+
+    padding:12px;
+
+}
+
+
+
+
+.download-item img{
+
+    width:45px;
+
+    height:45px;
+
+    min-width:45px;
+
+}
+
+
+
+
+.song-info h3{
+
+    font-size:14px;
+
+}
+
+
+
+.song-info p{
+
+    font-size:12px;
+
+}
+
+
+
+.download-item span{
+
+    display:none;
+
+}
+
+
+
+
+
+.play-btn,
+.remove-btn{
+
+    width:34px;
+
+    height:34px;
+
+}
+
+
+
+
+.album-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.album-card img{
+
+    height:110px;
+
+}
+
+
+
+.recent-downloads{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.playlist img{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+
+
+}
+/* ===============================
+FINAL RESPONSIVE FIXES
+================================ */
+
+
+@media(max-width:480px){
+
+
+.main{
+
+    padding:12px;
+
+}
+
+
+
+/* HEADER */
+
+.downloads-header{
+
+    gap:12px;
+
+}
+
+
+
+.header-icon{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:14px;
+
+}
+
+
+
+.header-icon i{
+
+    font-size:22px;
+
+}
+
+
+
+.downloads-header h1{
+
+    font-size:24px;
+
+}
+
+
+
+
+/* STORAGE */
+
+.storage-card{
+
+    padding:15px;
+
+    border-radius:15px;
+
+}
+
+
+
+.storage-card h3{
+
+    font-size:16px;
+
+}
+
+
+
+.storage-card button{
+
+    width:100%;
+
+}
+
+
+
+/* SONG LIST */
+
+
+.download-list{
+
+    border-radius:14px;
+
+}
+
+
+
+.download-item{
+
+    padding:10px;
+
+    gap:8px;
+
+}
+
+
+
+.rank{
+
+    width:25px;
+
+    min-width:25px;
+
+    font-size:16px;
+
+}
+
+
+
+.download-item img{
+
+    width:42px;
+
+    height:42px;
+
+    min-width:42px;
+
+}
+
+
+
+.song-info h3{
+
+    font-size:13px;
+
+}
+
+
+
+.song-info p{
+
+    font-size:11px;
+
+}
+
+
+
+
+
+.play-btn,
+.remove-btn{
+
+    width:30px;
+
+    height:30px;
+
+    font-size:12px;
+
+}
+
+
+
+
+
+/* ALBUMS */
+
+
+.album-grid{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+}
+
+
+
+.album-card{
+
+    padding:10px;
+
+    border-radius:14px;
+
+}
+
+
+
+.album-card img{
+
+    height:100px;
+
+}
+
+
+
+.album-card h3{
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* RECENT */
+
+
+.recent-card{
+
+    padding:14px;
+
+}
+
+
+
+.recent-card i{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+
+
+.recent-card h3{
+
+    font-size:14px;
+
+}
+
+
+
+.recent-card p{
+
+    font-size:12px;
+
+}
+
+
+
+}
+
+
+
+
+@media(max-width:350px){
+
+
+.album-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.download-item{
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.song-info{
+
+    min-width:120px;
+
+}
+
+
+
+}
+
+
+
+/* ===============================
+SMOOTH ANIMATIONS
+================================ */
+
+
+.download-item,
+.album-card,
+.recent-card,
+.play-btn,
+.remove-btn{
+
+    transition:all .3s ease;
+
+}
+
+
+
+
+
+.play-btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+
+.remove-btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+
+.album-card:hover img{
+
+    transform:scale(1.03);
+
+}
+
+
+
+
+
+.album-card img{
+
+    transition:.3s ease;
+
+}
+
+
+
+/* ===============================
+IMAGE PROTECTION
+================================ */
+
+
+img{
+
+    max-width:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+/* Prevent layout overflow */
+
+.download-item,
+.storage-card,
+.recent-card,
+.album-card{
+
+    overflow:hidden;
+
+}
+
+
+
+/* ===============================
+SCROLLBAR STYLE
+================================ */
+
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#0b0b0f;
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#a832ff;
+
+    border-radius:20px;
+
+}

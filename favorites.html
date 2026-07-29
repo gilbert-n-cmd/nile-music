@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Favorites | Melody Music</title>
+
+
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/favorites.css">
+<link rel="stylesheet" href="styles/logout.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================
+SIDEBAR
+========================== -->
+
+
+<aside class="sidebar">
+
+
+<button class="close-btn">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+
+
+
+<div class="logo">
+
+
+<i class="fa-solid fa-music"></i>
+
+
+<div>
+
+<h2>
+Melody
+</h2>
+
+
+<span>
+Feel the music
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<nav>
+
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+Home
+
+</a>
+
+
+
+<a href="explore.html">
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</a>
+
+
+
+<a href="charts.html">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+Charts
+
+</a>
+
+
+
+<a href="radio.html">
+
+<i class="fa-solid fa-radio"></i>
+
+Radio
+
+</a>
+
+
+
+<a href="new-releases.html">
+
+<i class="fa-solid fa-compact-disc"></i>
+
+New Releases
+
+</a>
+
+
+
+<a href="genres.html">
+
+<i class="fa-solid fa-grip"></i>
+
+Genres
+
+</a>
+
+
+</nav>
+
+
+
+
+
+<h4>
+YOUR LIBRARY
+</h4>
+
+
+
+<div class="library">
+
+
+<a class="active" href="favorites.html">
+
+<i class="fa-regular fa-heart"></i>
+
+Favorites
+
+</a>
+
+
+
+
+<a href="playlists.html">
+
+<i class="fa-solid fa-list"></i>
+
+Playlists
+
+</a>
+
+
+
+
+<a href="albums.html">
+
+<i class="fa-solid fa-circle-play"></i>
+
+Albums
+
+</a>
+
+
+
+
+<a href="artists.html">
+
+<i class="fa-solid fa-microphone"></i>
+
+Artists
+
+</a>
+
+
+
+
+<a href="#">
+
+<i class="fa-solid fa-download"></i>
+
+Downloads
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="premium">
+
+
+<i class="fa-solid fa-crown"></i>
+
+
+<h3>
+Go Premium
+</h3>
+
+
+<p>
+Listen to music without limits and ads.
+</p>
+
+
+<button>
+Try Premium
+</button>
+
+
+</div>
+
+<button id="logoutBtn">
+Logout
+</button>
+
+</aside>
+
+
+
+
+
+<div class="sidebar-overlay"></div>
+
+
+
+
+
+
+<!-- ==========================
+MAIN CONTENT
+========================== -->
+
+
+<main class="main">
+
+
+
+<header class="topbar">
+
+
+<button class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+
+
+<div class="profile">
+
+
+<i class="fa-regular fa-bell"></i>
+
+
+<img src="images/profile.jpg">
+
+
+<span>
+Atuma Gilbert
+</span>
+
+
+<i class="fa-solid fa-chevron-down"></i>
+
+
+</div>
+
+
+
+
+
+<div class="search">
+
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+
+<input 
+id="favoriteSearch"
+type="text"
+placeholder="Search favorite songs...">
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+
+<!-- ==========================
+PAGE HEADER
+========================== -->
+
+
+<section class="favorites-header">
+
+
+<span class="badge">
+
+<i class="fa-solid fa-heart"></i>
+
+Your Collection
+
+</span>
+
+
+
+<h1>
+
+<i class="fa-solid fa-heart"></i>
+
+Favorites
+
+</h1>
+
+
+
+<p>
+
+All your liked songs, albums and artists in one place.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<!-- ==========================
+FAVORITE SONGS
+========================== -->
+
+
+<section class="favorite-section">
+
+
+<div class="section-title">
+
+<h2>
+❤️ Favorite Songs
+</h2>
+
+
+<a href="#">
+See All
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="favorite-list">
+
+
+<div class="favorite-song">
+
+
+<span>
+1
+</span>
+
+
+<img src="images/song1.jpg">
+
+
+
+<div>
+
+<h3>
+Gratitude
+</h3>
+
+<p>
+Brandon Lake
+</p>
+
+
+</div>
+
+
+
+<span>
+4:12
+</span>
+
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+<button class="like-btn">
+
+<i class="fa-solid fa-heart"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="favorite-song">
+
+
+<span>
+2
+</span>
+
+
+<img src="images/song2.jpg">
+
+
+<div>
+
+<h3>
+Holy Forever
+</h3>
+
+<p>
+Chris Tomlin
+</p>
+
+
+</div>
+
+
+
+<span>
+5:03
+</span>
+
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+<button class="like-btn">
+
+<i class="fa-solid fa-heart"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="favorite-song">
+
+
+<span>
+3
+</span>
+
+
+<img src="images/song3.jpg">
+
+
+<div>
+
+<h3>
+Way Maker
+</h3>
+
+
+<p>
+Sinach
+</p>
+
+
+</div>
+
+
+<span>
+4:39
+</span>
+
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+<button class="like-btn">
+
+<i class="fa-solid fa-heart"></i>
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+</section>
+  
+  <!-- ==========================
+FAVORITE SONGS
+========================== -->
+
+<section class="favorites-section">
+
+<div class="section-title">
+
+<h2>
+<i class="fa-solid fa-heart"></i>
+Liked Songs
+</h2>
+
+<a href="#">See All</a>
+
+</div>
+
+
+<div class="favorite-list">
+
+
+<div class="favorite-item">
+
+<img src="images/song1.jpg">
+
+<div class="favorite-info">
+
+<h3>Gratitude</h3>
+
+<p>Brandon Lake</p>
+
+</div>
+
+<span>
+4:12
+</span>
+
+
+<button class="play-btn">
+<i class="fa-solid fa-play"></i>
+</button>
+
+
+<i class="fa-solid fa-heart liked"></i>
+
+</div>
+
+
+
+<div class="favorite-item">
+
+<img src="images/song2.jpg">
+
+<div class="favorite-info">
+
+<h3>Holy Forever</h3>
+
+<p>Chris Tomlin</p>
+
+</div>
+
+<span>
+5:03
+</span>
+
+
+<button class="play-btn">
+<i class="fa-solid fa-play"></i>
+</button>
+
+
+<i class="fa-solid fa-heart liked"></i>
+
+</div>
+
+
+
+
+<div class="favorite-item">
+
+<img src="images/song3.jpg">
+
+<div class="favorite-info">
+
+<h3>Way Maker</h3>
+
+<p>Sinach</p>
+
+</div>
+
+<span>
+4:39
+</span>
+
+
+<button class="play-btn">
+<i class="fa-solid fa-play"></i>
+</button>
+
+
+<i class="fa-solid fa-heart liked"></i>
+
+</div>
+
+
+
+
+<div class="favorite-item">
+
+<img src="images/song4.jpg">
+
+<div class="favorite-info">
+
+<h3>Jireh</h3>
+
+<p>Maverick City</p>
+
+</div>
+
+<span>
+6:10
+</span>
+
+
+<button class="play-btn">
+<i class="fa-solid fa-play"></i>
+</button>
+
+
+<i class="fa-solid fa-heart liked"></i>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- ==========================
+FAVORITE ARTISTS
+========================== -->
+
+<section class="favorites-section">
+
+
+<div class="section-title">
+
+<h2>
+🎤 Favorite Artists
+</h2>
+
+<a href="#">
+See All
+</a>
+
+</div>
+
+
+
+<div class="artists-grid">
+
+
+<div class="artist-card">
+
+<img src="images/artist1.jpg">
+
+<h3>
+Brandon Lake
+</h3>
+
+<p>
+Christian Artist
+</p>
+
+</div>
+
+
+
+<div class="artist-card">
+
+<img src="images/artist2.jpg">
+
+<h3>
+Mercy Chinwo
+</h3>
+
+<p>
+Gospel Artist
+</p>
+
+</div>
+
+
+
+<div class="artist-card">
+
+<img src="images/artist3.jpg">
+
+<h3>
+Chris Tomlin
+</h3>
+
+<p>
+Worship Leader
+</p>
+
+</div>
+
+
+
+<div class="artist-card">
+
+<img src="images/artist4.jpg">
+
+<h3>
+Sinach
+</h3>
+
+<p>
+Gospel Artist
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- ==========================
+FAVORITE ALBUMS
+========================== -->
+
+<section class="favorites-section">
+
+
+<div class="section-title">
+
+<h2>
+💿 Favorite Albums
+</h2>
+
+<a href="#">
+See All
+</a>
+
+</div>
+
+
+
+<div class="albums-grid">
+
+
+<div class="album-card">
+
+<img src="images/album1.jpg">
+
+<h3>
+House Of Worship
+</h3>
+
+<p>
+Joshua Aaron
+</p>
+
+</div>
+
+
+
+<div class="album-card">
+
+<img src="images/album2.jpg">
+
+<h3>
+Kingdom Sound
+</h3>
+
+<p>
+Brandon Lake
+</p>
+
+</div>
+
+
+
+<div class="album-card">
+
+<img src="images/album3.jpg">
+
+<h3>
+Victory
+</h3>
+
+<p>
+Sinach
+</p>
+
+</div>
+
+
+
+<div class="album-card">
+
+<img src="images/album4.jpg">
+
+<h3>
+Hope
+</h3>
+
+<p>
+CeCe Winans
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ==========================
+FOOTER
+========================== -->
+
+<footer class="footer">
+
+
+<div class="footer-container">
+
+
+<div class="footer-brand">
+
+<h2>
+
+<i class="fa-solid fa-music"></i>
+
+Melody Music
+
+</h2>
+
+
+<p>
+
+Save your favorite songs, artists and albums.
+Enjoy your personal music collection anytime.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="footer-links">
+
+<h3>
+Browse
+</h3>
+
+<a href="#">
+Home
+</a>
+
+<a href="#">
+Explore
+</a>
+
+<a href="#">
+Charts
+</a>
+
+<a href="#">
+Artists
+</a>
+
+<a href="#">
+Albums
+</a>
+
+
+</div>
+
+
+
+
+<div class="footer-links">
+
+<h3>
+Support
+</h3>
+
+<a href="#">
+Help Center
+</a>
+
+<a href="#">
+Privacy Policy
+</a>
+
+<a href="#">
+Terms
+</a>
+
+<a href="#">
+Contact
+</a>
+
+
+</div>
+
+
+
+
+<div class="footer-social">
+
+<h3>
+Follow Us
+</h3>
+
+
+<div class="social-icons">
+
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<p>
+
+© <span id="year"></span> Melody Music.
+All Rights Reserved.
+
+</p>
+
+</div>
+
+
+
+</footer>
+
+
+<script src="scripts/year.js"></script>
+<script src="scripts/sidebar.js"></script>
+<script src="scripts/favorites.js"></script>
+  <script src="scripts/logout.js"></script>
+  
+</body>
+</html>

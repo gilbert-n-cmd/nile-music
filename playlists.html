@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Playlists | Melody Music</title>
+
+
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/playlists.css">
+<link rel="stylesheet" href="styles/logout.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- ==========================
+SIDEBAR
+========================== -->
+
+
+<aside class="sidebar">
+
+
+<button class="close-btn">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+
+
+<div class="logo">
+
+
+<i class="fa-solid fa-music"></i>
+
+
+<div>
+
+<h2>Melody</h2>
+
+<span>Feel the music</span>
+
+</div>
+
+
+</div>
+
+
+
+
+<nav>
+
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+Home
+
+</a>
+
+
+
+<a href="explore.html">
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</a>
+
+
+
+<a href="charts.html">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+Charts
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fa-solid fa-radio"></i>
+
+Radio
+
+</a>
+
+
+
+<a href="new-releases.html">
+
+<i class="fa-solid fa-compact-disc"></i>
+
+New Releases
+
+</a>
+
+
+
+<a href="genres.html">
+
+<i class="fa-solid fa-grip"></i>
+
+Genres
+
+</a>
+
+
+
+</nav>
+
+
+
+
+<h4>
+YOUR LIBRARY
+</h4>
+
+
+
+<div class="library">
+
+
+<a href="favorites.html">
+
+<i class="fa-regular fa-heart"></i>
+
+Favorites
+
+</a>
+
+
+
+<a class="active">
+
+<i class="fa-solid fa-list"></i>
+
+Playlists
+
+</a>
+
+
+
+<a>
+
+<i class="fa-solid fa-circle-play"></i>
+
+Albums
+
+</a>
+
+
+
+<a>
+
+<i class="fa-solid fa-microphone"></i>
+
+Artists
+
+</a>
+
+
+
+<a>
+
+<i class="fa-solid fa-download"></i>
+
+Downloads
+
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="playlist-title">
+
+
+<h4>
+PLAYLISTS
+</h4>
+
+
+
+<button>
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="playlists">
+
+
+<div class="playlist">
+
+<img src="images/favorite.jpg">
+
+<div>
+
+<b>
+My Favorite
+</b>
+
+<p>
+25 Songs
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="playlist">
+
+<img src="images/workout.jpg">
+
+<div>
+
+<b>
+Workout Mix
+</b>
+
+<p>
+30 Songs
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="playlist">
+
+<img src="images/morning.jpg">
+
+<div>
+
+<b>
+Morning Vibes
+</b>
+
+<p>
+18 Songs
+</p>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="premium">
+
+
+<i class="fa-solid fa-crown"></i>
+
+
+<h3>
+Go Premium
+</h3>
+
+
+<p>
+Listen to music without limits and ads.
+</p>
+
+
+<button>
+Try Premium
+</button>
+
+
+</div>
+
+<button id="logoutBtn">
+Logout
+</button>
+
+</aside>
+
+
+
+<div class="sidebar-overlay"></div>
+
+
+
+
+
+
+<!-- ==========================
+MAIN
+========================== -->
+
+
+<main class="main">
+
+
+
+<header class="topbar">
+
+
+<button class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+
+<div class="profile">
+
+
+<i class="fa-regular fa-bell"></i>
+
+
+<img src="images/profile.jpg">
+
+
+<span>
+Atuma Gilbert
+</span>
+
+
+<i class="fa-solid fa-chevron-down"></i>
+
+
+</div>
+
+
+
+
+<div class="search">
+
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+
+<input 
+type="text"
+placeholder="Search playlists...">
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+<!-- ==========================
+PAGE HEADER
+========================== -->
+
+
+<section class="playlist-header">
+
+
+<div>
+
+
+<span>
+
+<i class="fa-solid fa-list"></i>
+
+Your Library
+
+</span>
+
+
+
+<h1>
+
+My Playlists
+
+</h1>
+
+
+
+<p>
+
+Create, manage and enjoy your favorite music collections.
+
+</p>
+
+
+</div>
+
+
+
+<button class="create-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+Create Playlist
+
+</button>
+
+
+</section>
+  <!-- ==========================
+MY PLAYLISTS
+========================== -->
+
+
+<section class="playlist-section">
+
+
+<div class="section-title">
+
+<h2>
+🎧 My Playlists
+</h2>
+
+
+<a href="#">
+See All
+</a>
+
+
+</div>
+
+
+
+
+<div class="playlist-grid">
+
+
+
+<div class="playlist-card">
+
+
+<img src="images/favorite.jpg">
+
+
+<div class="playlist-content">
+
+<h3>
+My Favorite
+</h3>
+
+
+<p>
+25 Songs • Created by You
+</p>
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+Play
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="playlist-card">
+
+
+<img src="images/workout.jpg">
+
+
+<div class="playlist-content">
+
+<h3>
+Workout Mix
+</h3>
+
+
+<p>
+30 Songs • Energy Music
+</p>
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+Play
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="playlist-card">
+
+
+<img src="images/morning.jpg">
+
+
+<div class="playlist-content">
+
+<h3>
+Morning Vibes
+</h3>
+
+
+<p>
+18 Songs • Relaxing
+</p>
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+Play
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="playlist-card">
+
+
+<img src="images/gospel.jpg">
+
+
+<div class="playlist-content">
+
+<h3>
+Gospel Hits
+</h3>
+
+
+<p>
+40 Songs • Worship
+</p>
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+Play
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ==========================
+FEATURED PLAYLISTS
+========================== -->
+
+
+<section class="playlist-section">
+
+
+<div class="section-title">
+
+
+<h2>
+🔥 Featured Playlists
+</h2>
+
+
+<a href="#">
+See All
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="playlist-grid">
+
+
+
+<div class="playlist-card">
+
+
+<img src="images/playlist1.jpg">
+
+
+<div class="playlist-content">
+
+
+<h3>
+Top Gospel
+</h3>
+
+
+<p>
+50 Songs
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="playlist-card">
+
+
+<img src="images/playlist2.jpg">
+
+
+<div class="playlist-content">
+
+
+<h3>
+Afro Gospel
+</h3>
+
+
+<p>
+38 Songs
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="playlist-card">
+
+
+<img src="images/playlist3.jpg">
+
+
+<div class="playlist-content">
+
+
+<h3>
+Sunday Praise
+</h3>
+
+
+<p>
+42 Songs
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="playlist-card">
+
+
+<img src="images/playlist4.jpg">
+
+
+<div class="playlist-content">
+
+
+<h3>
+Worship Forever
+</h3>
+
+
+<p>
+60 Songs
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ==========================
+MOOD PLAYLISTS
+========================== -->
+
+
+<section class="playlist-section">
+
+
+<div class="section-title">
+
+
+<h2>
+😊 Mood Playlists
+</h2>
+
+
+</div>
+
+
+
+<div class="mood-list">
+
+
+<span>
+😊 Happy
+</span>
+
+
+<span>
+😌 Chill
+</span>
+
+
+<span>
+💪 Workout
+</span>
+
+
+<span>
+🙏 Worship
+</span>
+
+
+<span>
+❤️ Love
+</span>
+
+
+<span>
+🌙 Sleep
+</span>
+
+
+<span>
+🚗 Road Trip
+</span>
+
+
+<span>
+🎉 Party
+</span>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<!-- ==========================
+RECENTLY PLAYED
+========================== -->
+
+
+<section class="playlist-section">
+
+
+<div class="section-title">
+
+
+<h2>
+⏱ Recently Played
+</h2>
+
+
+<a href="#">
+See All
+</a>
+
+
+</div>
+
+
+
+
+<div class="recent-list">
+
+
+
+<div class="recent-item">
+
+
+<img src="images/song1.jpg">
+
+
+<div>
+
+<h3>
+Gratitude
+</h3>
+
+<p>
+Brandon Lake
+</p>
+
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="recent-item">
+
+
+<img src="images/song2.jpg">
+
+
+<div>
+
+<h3>
+Holy Forever
+</h3>
+
+<p>
+Chris Tomlin
+</p>
+
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+</div>
+
+
+
+
+<div class="recent-item">
+
+
+<img src="images/song3.jpg">
+
+
+<div>
+
+<h3>
+Way Maker
+</h3>
+
+<p>
+Sinach
+</p>
+
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<!-- ==========================
+FOOTER
+========================== -->
+
+
+<footer class="footer">
+
+
+<div class="footer-container">
+
+
+
+<div class="footer-brand">
+
+
+<h2>
+
+<i class="fa-solid fa-music"></i>
+
+Melody Music
+
+</h2>
+
+
+
+<p>
+
+Create playlists, save songs and enjoy your personalized music experience.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+
+<h3>
+Browse
+</h3>
+
+
+<a href="#">
+Home
+</a>
+
+
+<a href="#">
+Explore
+</a>
+
+
+<a href="#">
+Charts
+</a>
+
+
+<a href="#">
+Artists
+</a>
+
+
+<a href="#">
+Albums
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+
+<h3>
+Support
+</h3>
+
+
+<a href="#">
+Help Center
+</a>
+
+
+<a href="#">
+Privacy Policy
+</a>
+
+
+<a href="#">
+Terms
+</a>
+
+
+<a href="#">
+Contact
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="footer-social">
+
+
+<h3>
+Follow Us
+</h3>
+
+
+
+<div class="social-icons">
+
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+
+© <span id="year"></span> Melody Music. All Rights Reserved.
+
+</p>
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+
+<script src="scripts/year.js"></script>
+<script src="scripts/sidebar.js"></script>
+<script src="scripts/playlists.js"></script>
+
+
+</main>
+</body>
+</html>
+  

@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Downloads | Melody Music</title>
+
+
+<!-- Main Styles -->
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/downloads.css">
+<link rel="stylesheet" href="styles/logout.css">
+
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================
+SIDEBAR
+========================== -->
+
+<aside class="sidebar">
+
+
+<button class="close-btn">
+<i class="fa-solid fa-xmark"></i>
+</button>
+
+
+<!-- LOGO -->
+
+<div class="logo">
+
+<i class="fa-solid fa-music"></i>
+
+<div>
+
+<h2>Melody</h2>
+
+<span>
+Feel the music
+</span>
+
+</div>
+
+</div>
+
+
+
+<!-- MENU -->
+
+<nav>
+
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+Home
+
+</a>
+
+
+
+<a href="explore.html">
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</a>
+
+
+
+<a href="charts.html">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+Charts
+
+</a>
+
+
+
+<a href="radio.html">
+
+<i class="fa-solid fa-radio"></i>
+
+Radio
+
+</a>
+
+
+
+<a href="new-releases.html">
+
+<i class="fa-solid fa-compact-disc"></i>
+
+New Releases
+
+</a>
+
+
+
+<a href="genres.html">
+
+<i class="fa-solid fa-grip"></i>
+
+Genres
+
+</a>
+
+
+</nav>
+
+
+
+
+<h4>
+YOUR LIBRARY
+</h4>
+
+
+
+<div class="library">
+
+
+<a href="favorites.html">
+
+<i class="fa-regular fa-heart"></i>
+
+Favorites
+
+</a>
+
+
+
+<a href="playlists.html">
+
+<i class="fa-solid fa-list"></i>
+
+Playlists
+
+</a>
+
+
+
+<a href="albums.html">
+
+<i class="fa-solid fa-circle-play"></i>
+
+Albums
+
+</a>
+
+
+
+<a href="artists.html">
+
+<i class="fa-solid fa-microphone"></i>
+
+Artists
+
+</a>
+
+
+
+<a class="active" href="downloads.html">
+
+<i class="fa-solid fa-download"></i>
+
+Downloads
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+<!-- PLAYLISTS -->
+
+
+<div class="playlist-title">
+
+<h4>
+PLAYLISTS
+</h4>
+
+
+<button>
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+
+</div>
+
+
+
+<div class="playlists">
+
+
+
+<div class="playlist">
+
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+
+<div>
+
+<b>
+My Favorite
+</b>
+
+<p>
+25 Songs
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="playlist">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81">
+
+
+<div>
+
+<b>
+Workout Mix
+</b>
+
+<p>
+30 Songs
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="playlist">
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+
+<div>
+
+<b>
+Morning Vibes
+</b>
+
+<p>
+18 Songs
+</p>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- PREMIUM CARD -->
+
+
+<div class="premium">
+
+
+<i class="fa-solid fa-crown"></i>
+
+
+<h3>
+Go Premium
+</h3>
+
+
+<p>
+Listen to music without limits and ads.
+</p>
+
+
+<button>
+Try Premium
+</button>
+
+
+</div>
+
+<button id="logoutBtn">
+Logout
+</button>
+
+</aside>
+
+
+
+<div class="sidebar-overlay"></div>
+
+
+
+
+
+<!-- ==========================
+MAIN CONTENT
+========================== -->
+
+
+<main class="main">
+
+
+
+
+
+<!-- TOPBAR -->
+
+
+<header class="topbar">
+
+
+<button class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+
+
+<div class="profile">
+
+
+<i class="fa-regular fa-bell"></i>
+
+
+<img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde">
+
+
+<span>
+Atuma Gilbert
+</span>
+
+
+<i class="fa-solid fa-chevron-down"></i>
+
+
+</div>
+
+
+
+
+
+<div class="search">
+
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+
+<input 
+type="text"
+id="downloadSearch"
+placeholder="Search downloaded songs...">
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+<!-- ==========================
+PAGE HEADER
+========================== -->
+
+
+<section class="downloads-header">
+
+
+<div class="header-icon">
+
+<i class="fa-solid fa-download"></i>
+
+</div>
+
+
+<div>
+
+
+<h1>
+Downloads
+</h1>
+
+
+<p>
+Your offline music collection. Listen anytime, anywhere.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ==========================
+STORAGE CARD
+========================== -->
+
+
+<section class="storage-card">
+
+
+<div>
+
+
+<i class="fa-solid fa-hard-drive"></i>
+
+
+<h3>
+Storage Used
+</h3>
+
+
+<p>
+2.4 GB of 10 GB
+</p>
+
+
+</div>
+
+
+
+<div class="progress">
+
+
+<span></span>
+
+
+</div>
+
+
+
+<button>
+
+Manage Storage
+
+</button>
+
+
+</section>
+
+
+
+
+
+<!-- ==========================
+DOWNLOADED SONGS
+========================== -->
+
+
+<section class="downloads-section">
+
+
+<div class="section-title">
+
+
+<h2>
+⬇ Downloaded Songs
+</h2>
+
+
+<button>
+Download All
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="download-list">
+
+
+
+<div class="download-item">
+
+
+<div class="rank">
+1
+</div>
+
+
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+
+
+
+<div class="song-info">
+
+
+<h3>
+Gratitude
+</h3>
+
+
+<p>
+Brandon Lake
+</p>
+
+
+</div>
+
+
+
+<span>
+4:12
+</span>
+
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+<button class="remove-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+
+
+</div>
+  
+  <!-- SONG 2 -->
+
+<div class="download-item">
+
+
+<div class="rank">
+2
+</div>
+
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81">
+
+
+
+<div class="song-info">
+
+<h3>
+Holy Forever
+</h3>
+
+<p>
+Chris Tomlin
+</p>
+
+</div>
+
+
+
+<span>
+5:03
+</span>
+
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+<button class="remove-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<!-- SONG 3 -->
+
+
+<div class="download-item">
+
+
+<div class="rank">
+3
+</div>
+
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+
+
+<div class="song-info">
+
+<h3>
+Way Maker
+</h3>
+
+<p>
+Sinach
+</p>
+
+</div>
+
+
+
+<span>
+4:39
+</span>
+
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+<button class="remove-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- SONG 4 -->
+
+
+<div class="download-item">
+
+
+<div class="rank">
+4
+</div>
+
+
+<img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b">
+
+
+
+<div class="song-info">
+
+<h3>
+Jireh
+</h3>
+
+<p>
+Maverick City
+</p>
+
+</div>
+
+
+
+<span>
+6:10
+</span>
+
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+<button class="remove-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- SONG 5 -->
+
+
+<div class="download-item">
+
+
+<div class="rank">
+5
+</div>
+
+
+<img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819">
+
+
+
+<div class="song-info">
+
+<h3>
+Praise
+</h3>
+
+<p>
+Elevation Worship
+</p>
+
+</div>
+
+
+
+<span>
+5:25
+</span>
+
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+<button class="remove-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ==========================
+DOWNLOADED ALBUMS
+========================== -->
+
+
+<section class="downloads-section">
+
+
+<div class="section-title">
+
+<h2>
+💿 Downloaded Albums
+</h2>
+
+
+<a href="#">
+See All
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="album-grid">
+
+
+
+<div class="album-card">
+
+
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+
+
+<h3>
+House Of Worship
+</h3>
+
+
+<p>
+Joshua Aaron
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="album-card">
+
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81">
+
+
+<h3>
+Kingdom Sound
+</h3>
+
+
+<p>
+Brandon Lake
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="album-card">
+
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+
+<h3>
+Victory
+</h3>
+
+
+<p>
+Sinach
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="album-card">
+
+
+<img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b">
+
+
+<h3>
+Grace
+</h3>
+
+
+<p>
+Mercy Chinwo
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================
+RECENT DOWNLOADS
+========================== -->
+
+
+<section class="downloads-section">
+
+
+<div class="section-title">
+
+
+<h2>
+🕒 Recently Downloaded
+</h2>
+
+
+</div>
+
+
+
+
+<div class="recent-downloads">
+
+
+
+<div class="recent-card">
+
+
+<i class="fa-solid fa-music"></i>
+
+
+<div>
+
+<h3>
+Morning Worship Playlist
+</h3>
+
+<p>
+15 songs • Downloaded today
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="recent-card">
+
+
+<i class="fa-solid fa-headphones"></i>
+
+
+<div>
+
+<h3>
+Gospel Hits Collection
+</h3>
+
+<p>
+25 songs • Downloaded yesterday
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="recent-card">
+
+
+<i class="fa-solid fa-star"></i>
+
+
+<div>
+
+<h3>
+Favorite Songs
+</h3>
+
+<p>
+40 songs • Downloaded last week
+</p>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================
+FOOTER
+========================== -->
+
+
+<footer class="footer">
+
+
+<div class="footer-container">
+
+
+
+<div class="footer-brand">
+
+
+<h2>
+
+<i class="fa-solid fa-music"></i>
+
+Melody Music
+
+</h2>
+
+
+<p>
+
+Stream millions of songs, discover artists, create playlists and enjoy music anywhere.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+
+<h3>
+Browse
+</h3>
+
+
+<a href="#">
+Home
+</a>
+
+
+<a href="#">
+Explore
+</a>
+
+
+<a href="#">
+Charts
+</a>
+
+
+<a href="#">
+Artists
+</a>
+
+
+<a href="#">
+Albums
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+
+<h3>
+Support
+</h3>
+
+
+<a href="#">
+Help Center
+</a>
+
+
+<a href="#">
+Privacy Policy
+</a>
+
+
+<a href="#">
+Terms
+</a>
+
+
+<a href="#">
+Contact
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div class="footer-social">
+
+
+<h3>
+Follow Us
+</h3>
+
+
+<div class="social-icons">
+
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+
+© <span id="year"></span> Melody Music. All Rights Reserved.
+
+</p>
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+<!-- SCRIPTS -->
+
+
+<script src="scripts/year.js"></script>
+
+<script src="scripts/sidebar.js"></script>
+
+<script src="scripts/downloads.js"></script>
+
+<script src="scripts/logout.js"></script>
+
+</main>
+
+
+</body>
+
+</html>

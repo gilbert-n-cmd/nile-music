@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Radio | Melody Music</title>
+
+
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/radio.css">
+<link rel="stylesheet" href="styles/logout.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================
+SIDEBAR
+========================== -->
+
+
+<aside class="sidebar">
+
+
+<button class="close-btn">
+<i class="fa-solid fa-xmark"></i>
+</button>
+
+
+
+<div class="logo">
+
+<i class="fa-solid fa-music"></i>
+
+<div>
+
+<h2>Melody</h2>
+
+<span>
+Feel the music
+</span>
+
+</div>
+
+</div>
+
+
+
+
+<nav>
+
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+Home
+
+</a>
+
+
+
+<a href="explore.html">
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</a>
+
+
+
+<a href="charts.html">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+Charts
+
+</a>
+
+
+
+<a class="active">
+
+<i class="fa-solid fa-radio"></i>
+
+Radio
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fa-solid fa-compact-disc"></i>
+
+New Releases
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fa-solid fa-grip"></i>
+
+Genres
+
+</a>
+
+
+
+</nav>
+
+
+
+
+
+<h4>
+YOUR LIBRARY
+</h4>
+
+
+
+<div class="library">
+
+
+<a href="favorites.html">
+
+<i class="fa-regular fa-heart"></i>
+
+Favorites
+
+</a>
+
+
+
+<a href="playlists.html">
+
+<i class="fa-solid fa-list"></i>
+
+Playlists
+
+</a>
+
+
+
+<a href="albums.html">
+
+<i class="fa-solid fa-circle-play"></i>
+
+Albums
+
+</a>
+
+
+
+<a href="artists.html">
+
+<i class="fa-solid fa-microphone"></i>
+
+Artists
+
+</a>
+
+
+
+<a href="downloads.html">
+
+<i class="fa-solid fa-download"></i>
+
+Downloads
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="playlist-title">
+
+
+<h4>
+PLAYLISTS
+</h4>
+
+
+<button>
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+
+</div>
+
+
+
+
+<div class="playlists">
+
+
+<div class="playlist">
+
+<img src="images/favorite.jpg">
+
+<div>
+
+<b>
+My Favorite
+</b>
+
+<p>
+25 Songs
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="playlist">
+
+<img src="images/workout.jpg">
+
+<div>
+
+<b>
+Workout Mix
+</b>
+
+<p>
+30 Songs
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="playlist">
+
+<img src="images/morning.jpg">
+
+<div>
+
+<b>
+Morning Vibes
+</b>
+
+<p>
+18 Songs
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="playlist">
+
+<img src="images/gospel.jpg">
+
+<div>
+
+<b>
+Gospel Hits
+</b>
+
+<p>
+40 Songs
+</p>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="premium">
+
+
+<i class="fa-solid fa-crown"></i>
+
+
+<h3>
+Go Premium
+</h3>
+
+
+<p>
+Listen to music without limits and ads.
+</p>
+
+
+<button>
+Try Premium
+</button>
+
+
+</div>
+
+<button id="logoutBtn">
+Logout
+</button>
+
+</aside>
+
+
+
+<div class="sidebar-overlay"></div>
+
+
+
+
+
+<!-- ==========================
+MAIN CONTENT
+========================== -->
+
+
+<main class="main">
+
+
+
+
+
+<!-- TOPBAR -->
+
+
+<header class="topbar">
+
+
+<button class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+
+
+<div class="profile">
+
+
+<i class="fa-regular fa-bell"></i>
+
+
+<img src="images/profile.jpg">
+
+
+
+<span>
+Atuma Gilbert
+</span>
+
+
+
+<i class="fa-solid fa-chevron-down"></i>
+
+
+</div>
+
+
+
+
+
+<div class="search">
+
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+
+<input 
+type="text"
+placeholder="Search radio stations, DJs, podcasts...">
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- ==========================
+RADIO HEADER
+========================== -->
+
+
+<section class="radio-header">
+
+
+<span class="radio-badge">
+
+<i class="fa-solid fa-signal"></i>
+
+LIVE RADIO
+
+</span>
+
+
+
+<h1>
+
+<i class="fa-solid fa-radio"></i>
+
+Melody Radio
+
+</h1>
+
+
+
+<p>
+
+Listen to live stations, discover new shows and enjoy music from around the world.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+HERO RADIO
+========================== -->
+
+
+<section class="radio-hero">
+
+
+
+<div class="hero-content">
+
+
+<span>
+NOW PLAYING
+</span>
+
+
+
+<h1>
+Worship Radio Live
+</h1>
+
+
+
+<p>
+
+24/7 worship songs, gospel hits and inspirational music.
+
+</p>
+
+
+
+<button class="listen-btn">
+
+<i class="fa-solid fa-play"></i>
+
+Listen Live
+
+</button>
+
+
+
+</div>
+
+
+
+
+<img src="images/radio-banner.jpg">
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+LIVE STATIONS
+========================== -->
+
+
+<section class="radio-section">
+
+
+
+<div class="section-title">
+
+
+<h2>
+🔴 Live Stations
+</h2>
+
+
+<a href="#">
+See All
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="radio-grid">
+
+
+
+
+
+<div class="radio-card">
+
+
+<img src="images/worship.jpg">
+
+
+<div>
+
+
+<h3>
+Worship Radio
+</h3>
+
+
+<p>
+24/7 Worship Music
+</p>
+
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="radio-card">
+
+
+<img src="images/gospel.jpg">
+
+
+<div>
+
+
+<h3>
+Gospel FM
+</h3>
+
+
+<p>
+Christian Hits
+</p>
+
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="radio-card">
+
+
+<img src="images/afro.jpg">
+
+
+<div>
+
+
+<h3>
+Afro Gospel Live
+</h3>
+
+
+<p>
+African Gospel Music
+</p>
+
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="radio-card">
+
+
+<img src="images/melody.jpg">
+
+
+<div>
+
+
+<h3>
+Melody FM
+</h3>
+
+
+<p>
+Trending Music
+</p>
+
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+  
+  <!-- ===========================
+FEATURED RADIO STATIONS
+=========================== -->
+
+<section class="radio-section">
+
+<div class="section-title">
+
+<h2>⭐ Featured Radio Stations</h2>
+
+<a href="#">See All</a>
+
+</div>
+
+
+<div class="radio-grid">
+
+
+<div class="radio-card">
+
+<img src="images/worship-radio.jpg">
+
+<div class="radio-info">
+
+<h3>Worship Radio</h3>
+
+<p>24/7 Worship Music</p>
+
+<span>
+<i class="fa-solid fa-users"></i>
+120K Listeners
+</span>
+
+</div>
+
+<button>
+<i class="fa-solid fa-play"></i>
+</button>
+
+</div>
+
+
+
+<div class="radio-card">
+
+<img src="images/gospel-radio.jpg">
+
+<div class="radio-info">
+
+<h3>Gospel Hits FM</h3>
+
+<p>Best Gospel Songs</p>
+
+<span>
+<i class="fa-solid fa-users"></i>
+85K Listeners
+</span>
+
+</div>
+
+<button>
+<i class="fa-solid fa-play"></i>
+</button>
+
+</div>
+
+
+
+<div class="radio-card">
+
+<img src="images/afro-radio.jpg">
+
+<div class="radio-info">
+
+<h3>Afro Gospel</h3>
+
+<p>African Christian Music</p>
+
+<span>
+<i class="fa-solid fa-users"></i>
+65K Listeners
+</span>
+
+</div>
+
+<button>
+<i class="fa-solid fa-play"></i>
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ===========================
+LIVE NOW
+=========================== -->
+
+<section class="radio-section">
+
+
+<div class="section-title">
+
+<h2>🔴 Live Now</h2>
+
+<a href="#">View All</a>
+
+</div>
+
+
+
+<div class="live-grid">
+
+
+<div class="live-card">
+
+
+<div class="live-image">
+
+<img src="images/live1.jpg">
+
+<span>
+LIVE
+</span>
+
+</div>
+
+
+<h3>Morning Worship</h3>
+
+<p>
+Hosted by Melody Radio
+</p>
+
+
+<div class="listeners">
+
+<i class="fa-solid fa-headphones"></i>
+
+15,420 Listening
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="live-card">
+
+
+<div class="live-image">
+
+<img src="images/live2.jpg">
+
+<span>
+LIVE
+</span>
+
+</div>
+
+
+<h3>Top Gospel Countdown</h3>
+
+<p>
+Today's biggest gospel songs
+</p>
+
+
+<div class="listeners">
+
+<i class="fa-solid fa-headphones"></i>
+
+9,850 Listening
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="live-card">
+
+
+<div class="live-image">
+
+<img src="images/live3.jpg">
+
+<span>
+LIVE
+</span>
+
+</div>
+
+
+<h3>Evening Praise</h3>
+
+<p>
+Relax with worship music
+</p>
+
+
+<div class="listeners">
+
+<i class="fa-solid fa-headphones"></i>
+
+7,200 Listening
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+POPULAR RADIO SHOWS
+=========================== -->
+
+
+<section class="radio-section">
+
+
+<div class="section-title">
+
+<h2>🎙️ Popular Radio Shows</h2>
+
+<a href="#">See All</a>
+
+</div>
+
+
+
+<div class="shows-grid">
+
+
+
+<div class="show-card">
+
+<img src="images/show1.jpg">
+
+<h3>Morning Devotion</h3>
+
+<p>
+Daily inspiration and worship
+</p>
+
+</div>
+
+
+
+
+<div class="show-card">
+
+<img src="images/show2.jpg">
+
+<h3>Music Hour</h3>
+
+<p>
+Trending music discussion
+</p>
+
+</div>
+
+
+
+
+<div class="show-card">
+
+<img src="images/show3.jpg">
+
+<h3>Artist Spotlight</h3>
+
+<p>
+Meet your favourite artists
+</p>
+
+</div>
+
+
+
+
+<div class="show-card">
+
+<img src="images/show4.jpg">
+
+<h3>Sunday Praise</h3>
+
+<p>
+Weekend worship experience
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ===========================
+RADIO BY COUNTRY
+=========================== -->
+
+
+<section class="radio-section">
+
+
+<div class="section-title">
+
+<h2>🌍 Radio By Country</h2>
+
+</div>
+
+
+
+<div class="country-tags">
+
+
+<span>🇺🇬 Uganda</span>
+
+<span>🇳🇬 Nigeria</span>
+
+<span>🇰🇪 Kenya</span>
+
+<span>🇿🇦 South Africa</span>
+
+<span>🇺🇸 USA</span>
+
+<span>🇬🇧 UK</span>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ===========================
+RECOMMENDED STATIONS
+=========================== -->
+
+
+<section class="radio-section">
+
+
+<div class="section-title">
+
+<h2>🎧 Recommended Stations</h2>
+
+<a href="#">More</a>
+
+</div>
+
+
+<div class="station-list">
+
+
+
+<div class="station-item">
+
+
+<img src="images/station1.jpg">
+
+
+<div>
+
+<h3>Melody Live</h3>
+
+<p>
+Trending music 24/7
+</p>
+
+</div>
+
+
+<button>
+<i class="fa-solid fa-play"></i>
+</button>
+
+
+</div>
+
+
+
+
+<div class="station-item">
+
+
+<img src="images/station2.jpg">
+
+
+<div>
+
+<h3>Christian Radio</h3>
+
+<p>
+Worship and praise
+</p>
+
+</div>
+
+
+<button>
+<i class="fa-solid fa-play"></i>
+</button>
+
+
+</div>
+
+
+
+
+<div class="station-item">
+
+
+<img src="images/station3.jpg">
+
+
+<div>
+
+<h3>Afro Beats FM</h3>
+
+<p>
+African music nonstop
+</p>
+
+</div>
+
+
+<button>
+<i class="fa-solid fa-play"></i>
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+  
+  
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>
+                <i class="fa-solid fa-music"></i>
+                Melody Music
+            </h2>
+
+            <p>
+                Stream millions of songs, discover amazing artists, create playlists and enjoy music anywhere.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Browse</h3>
+
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Charts</a>
+            <a href="#">Artists</a>
+            <a href="#">Albums</a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="year"></span> Melody Music. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="scripts/year.js"></script>
+<script src="scripts/sidebar.js"></script>
+<script src="scripts/charts.js"></script>
+<script src="scripts/logout.js"></script>
+</main>
+
+</body>
+</html>

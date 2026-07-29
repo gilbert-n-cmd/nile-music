@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Genres | Melody Music</title>
+
+
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/genres.css">
+<link rel="stylesheet" href="styles/logout.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================
+SIDEBAR
+========================== -->
+
+
+<aside class="sidebar">
+
+
+<button class="close-btn">
+<i class="fa-solid fa-xmark"></i>
+</button>
+
+
+
+<!-- LOGO -->
+
+<div class="logo">
+
+<i class="fa-solid fa-music"></i>
+
+<div>
+
+<h2>Melody</h2>
+
+<span>
+Feel the music
+</span>
+
+</div>
+
+</div>
+
+
+
+
+<!-- MENU -->
+
+<nav>
+
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+Home
+
+</a>
+
+
+
+<a href="explore.html">
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</a>
+
+
+
+<a href="charts.html">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+Charts
+
+</a>
+
+
+
+<a href="radio.html">
+
+<i class="fa-solid fa-radio"></i>
+
+Radio
+
+</a>
+
+
+
+<a href="new-releases.html">
+
+<i class="fa-solid fa-compact-disc"></i>
+
+New Releases
+
+</a>
+
+
+
+<a href="genres.html" class="active">
+
+<i class="fa-solid fa-grip"></i>
+
+Genres
+
+</a>
+
+
+</nav>
+
+
+
+
+<h4>
+YOUR LIBRARY
+</h4>
+
+
+
+<div class="library">
+
+
+<a href="favorites.html">
+
+<i class="fa-regular fa-heart"></i>
+
+Favorites
+
+</a>
+
+
+
+<a href="playlists.html">
+
+<i class="fa-solid fa-list"></i>
+
+Playlists
+
+</a>
+
+
+
+<a href="albums.html">
+
+<i class="fa-solid fa-circle-play"></i>
+
+Albums
+
+</a>
+
+
+
+<a>
+
+<i class="fa-solid fa-microphone"></i>
+
+Artists
+
+</a>
+
+
+
+<a href="downloads.html">
+
+<i class="fa-solid fa-download"></i>
+
+Downloads
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+<!-- PLAYLISTS -->
+
+
+<div class="playlist-title">
+
+
+<h4>
+PLAYLISTS
+</h4>
+
+
+<button>
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+
+</div>
+
+
+
+<div class="playlists">
+
+
+<div class="playlist">
+
+<img src="images/favorite.jpg">
+
+
+<div>
+
+<b>
+My Favorite
+</b>
+
+<p>
+25 Songs
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="playlist">
+
+<img src="images/workout.jpg">
+
+
+<div>
+
+<b>
+Workout Mix
+</b>
+
+<p>
+30 Songs
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="playlist">
+
+<img src="images/morning.jpg">
+
+
+<div>
+
+<b>
+Morning Vibes
+</b>
+
+<p>
+18 Songs
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="playlist">
+
+<img src="images/gospel.jpg">
+
+
+<div>
+
+<b>
+Gospel Hits
+</b>
+
+<p>
+40 Songs
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- PREMIUM -->
+
+
+<div class="premium">
+
+
+<i class="fa-solid fa-crown"></i>
+
+
+<h3>
+Go Premium
+</h3>
+
+
+<p>
+Listen to music without limits and ads.
+</p>
+
+
+<button>
+Try Premium
+</button>
+
+
+</div>
+
+<button id="logoutBtn">
+Logout
+</button>
+
+</aside>
+
+
+
+
+<div class="sidebar-overlay"></div>
+
+
+
+
+
+<!-- ==========================
+MAIN CONTENT
+========================== -->
+
+
+<main class="main">
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<header class="topbar">
+
+
+<button class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+
+<div class="profile">
+
+
+<i class="fa-regular fa-bell"></i>
+
+
+<img src="images/profile.jpg">
+
+
+<span>
+Atuma Gilbert
+</span>
+
+
+<i class="fa-solid fa-chevron-down"></i>
+
+
+</div>
+
+
+
+
+
+<div class="search">
+
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+
+<input 
+type="text"
+placeholder="Search genres, songs, artists...">
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+<!-- ==========================
+GENRES HEADER
+========================== -->
+
+
+<section class="genres-header">
+
+
+<span class="badge">
+
+<i class="fa-solid fa-fire"></i>
+
+Explore Music Styles
+
+</span>
+
+
+
+<h1>
+
+<i class="fa-solid fa-grip"></i>
+
+Browse Genres
+
+</h1>
+
+
+
+<p>
+
+Discover music by your favourite style, mood and culture.
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================
+BROWSE GENRES
+========================== -->
+
+
+<section class="genres-section">
+
+
+
+<div class="section-title">
+
+
+<h2>
+🎵 All Genres
+</h2>
+
+
+<a href="#">
+See All
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="genres-grid">
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-cross"></i>
+
+<h3>
+Gospel
+</h3>
+
+<p>
+Worship & Praise
+</p>
+
+</div>
+
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-fire"></i>
+
+<h3>
+Afrobeats
+</h3>
+
+<p>
+African Vibes
+</p>
+
+</div>
+
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-guitar"></i>
+
+<h3>
+Rock
+</h3>
+
+<p>
+Powerful Sounds
+</p>
+
+</div>
+
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-headphones"></i>
+
+<h3>
+Pop
+</h3>
+
+<p>
+Popular Hits
+</p>
+
+</div>
+
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-microphone"></i>
+
+<h3>
+Hip Hop
+</h3>
+
+<p>
+Rap & Rhythm
+</p>
+
+</div>
+
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-drum"></i>
+
+<h3>
+Jazz
+</h3>
+
+<p>
+Smooth Music
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+  
+  <!-- ==========================
+MORE GENRES
+========================== -->
+
+
+<section class="genres-section">
+
+
+<div class="genres-grid">
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-music"></i>
+
+<h3>
+Classical
+</h3>
+
+<p>
+Orchestra Sounds
+</p>
+
+</div>
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<h3>
+Love Songs
+</h3>
+
+<p>
+Romantic Music
+</p>
+
+</div>
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-earth-africa"></i>
+
+<h3>
+World Music
+</h3>
+
+<p>
+Global Sounds
+</p>
+
+</div>
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-face-smile"></i>
+
+<h3>
+R&B
+</h3>
+
+<p>
+Soulful Vibes
+</p>
+
+</div>
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-guitar"></i>
+
+<h3>
+Country
+</h3>
+
+<p>
+Country Hits
+</p>
+
+</div>
+
+
+
+
+<div class="genre-card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>
+Electronic
+</h3>
+
+<p>
+EDM & Dance
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================
+POPULAR GENRE PLAYLISTS
+========================== -->
+
+
+<section class="genres-section">
+
+
+<div class="section-title">
+
+<h2>
+🔥 Popular Genre Playlists
+</h2>
+
+<a href="#">
+See All
+</a>
+
+
+</div>
+
+
+
+
+<div class="playlist-grid">
+
+
+
+<div class="genre-playlist">
+
+
+<img src="images/gospel.jpg">
+
+
+<h3>
+Ultimate Gospel
+</h3>
+
+
+<p>
+50 Songs • Worship
+</p>
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+Play
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="genre-playlist">
+
+
+<img src="images/afrobeats.jpg">
+
+
+<h3>
+Afrobeats Party
+</h3>
+
+
+<p>
+40 Songs • Africa
+</p>
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+Play
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="genre-playlist">
+
+
+<img src="images/pop.jpg">
+
+
+<h3>
+Pop Hits
+</h3>
+
+
+<p>
+60 Songs • Trending
+</p>
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+Play
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="genre-playlist">
+
+
+<img src="images/chill.jpg">
+
+
+<h3>
+Chill Collection
+</h3>
+
+
+<p>
+35 Songs • Relax
+</p>
+
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+Play
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+TOP ARTISTS BY GENRE
+========================== -->
+
+
+<section class="genres-section">
+
+
+<div class="section-title">
+
+<h2>
+🎤 Popular Artists
+</h2>
+
+
+<a href="#">
+See All
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="artists-grid">
+
+
+
+<div class="artist-card">
+
+
+<img src="images/artist1.jpg">
+
+
+<h3>
+Brandon Lake
+</h3>
+
+
+<p>
+Gospel
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="artist-card">
+
+
+<img src="images/artist2.jpg">
+
+
+<h3>
+Burna Boy
+</h3>
+
+
+<p>
+Afrobeats
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="artist-card">
+
+
+<img src="images/artist3.jpg">
+
+
+<h3>
+Chris Tomlin
+</h3>
+
+
+<p>
+Worship
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="artist-card">
+
+
+<img src="images/artist4.jpg">
+
+
+<h3>
+Sinach
+</h3>
+
+
+<p>
+Gospel
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ==========================
+TRENDING SONGS
+========================== -->
+
+
+<section class="genres-section">
+
+
+<div class="section-title">
+
+<h2>
+🎶 Trending Songs By Genre
+</h2>
+
+
+<a href="#">
+View All
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="songs-list">
+
+
+
+<div class="song-item">
+
+
+<img src="images/song1.jpg">
+
+
+<div>
+
+<h3>
+Gratitude
+</h3>
+
+<p>
+Brandon Lake • Gospel
+</p>
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="song-item">
+
+
+<img src="images/song2.jpg">
+
+
+<div>
+
+<h3>
+Last Last
+</h3>
+
+<p>
+Burna Boy • Afrobeats
+</p>
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="song-item">
+
+
+<img src="images/song3.jpg">
+
+
+<div>
+
+<h3>
+Holy Forever
+</h3>
+
+<p>
+Chris Tomlin • Worship
+</p>
+
+</div>
+
+
+
+<button>
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+FOOTER
+========================== -->
+
+
+<footer class="footer">
+
+
+<div class="footer-container">
+
+
+
+<div class="footer-brand">
+
+
+<h2>
+
+<i class="fa-solid fa-music"></i>
+
+Melody Music
+
+</h2>
+
+
+
+<p>
+
+Discover millions of songs, explore genres and enjoy music anywhere.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+
+<h3>
+Browse
+</h3>
+
+
+<a href="#">
+Home
+</a>
+
+
+<a href="#">
+Explore
+</a>
+
+
+<a href="#">
+Charts
+</a>
+
+
+<a href="#">
+Genres
+</a>
+
+
+<a href="#">
+Radio
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-links">
+
+
+<h3>
+Support
+</h3>
+
+
+<a href="#">
+Help Center
+</a>
+
+
+<a href="#">
+Privacy Policy
+</a>
+
+
+<a href="#">
+Terms
+</a>
+
+
+<a href="#">
+Contact
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-social">
+
+
+<h3>
+Follow Us
+</h3>
+
+
+
+<div class="social-icons">
+
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+
+© <span id="year"></span> Melody Music. All Rights Reserved.
+
+</p>
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+
+
+<script src="scripts/year.js"></script>
+
+<script src="scripts/sidebar.js"></script>
+
+<script src="scripts/genres.js"></script>
+
+<script src="scripts/logout.js"></script>
+  
+</main>
+
+
+</body>
+
+</html>

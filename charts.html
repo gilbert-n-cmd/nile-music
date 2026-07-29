@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Charts | Melody Music</title>
+
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/charts.css">
+<link rel="stylesheet" href="styles/logout.css">
+ <link rel="stylesheet" href="styles/logout.css">   
+    
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+SIDEBAR
+========================== -->
+
+<aside class="sidebar">
+
+<button class="close-btn">
+<i class="fa-solid fa-xmark"></i>
+</button>
+
+<div class="logo">
+
+<i class="fa-solid fa-music"></i>
+
+<div>
+<h2>Melody</h2>
+<span>Feel the music</span>
+</div>
+
+</div>
+
+<nav>
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+
+<a href="explore.html">
+<i class="fa-solid fa-compass"></i>
+Explore
+</a>
+
+<a href="charts.html" class="active">
+<i class="fa-solid fa-chart-simple"></i>
+Charts
+</a>
+
+<a href="radio.html">
+<i class="fa-solid fa-radio"></i>
+Radio
+</a>
+
+<a href="new-releases.html">
+<i class="fa-solid fa-compact-disc"></i>
+New Releases
+</a>
+
+<a href="genres.html">
+<i class="fa-solid fa-grip"></i>
+Genres
+</a>
+
+</nav>
+
+<h4>YOUR LIBRARY</h4>
+
+<div class="library">
+
+<a href="favorites.html">
+<i class="fa-regular fa-heart"></i>
+Favorites
+</a>
+
+<a href="playlists.html">
+<i class="fa-solid fa-list"></i>
+Playlists
+</a>
+
+<a href="albums.html">
+<i class="fa-solid fa-circle-play"></i>
+Albums
+</a>
+
+<a href="artists.html">
+<i class="fa-solid fa-microphone"></i>
+Artists
+</a>
+
+<a href="downloads.html">
+<i class="fa-solid fa-download"></i>
+Downloads
+</a>
+
+</div>
+
+<div class="playlist-title">
+
+<h4>PLAYLISTS</h4>
+
+<button>
+<i class="fa-solid fa-plus"></i>
+</button>
+
+</div>
+
+<div class="playlists">
+
+<div class="playlist">
+
+<img src="images/favorite.jpg">
+
+<div>
+<b>My Favorite</b>
+<p>25 Songs</p>
+</div>
+
+</div>
+
+<div class="playlist">
+
+<img src="images/workout.jpg">
+
+<div>
+<b>Workout Mix</b>
+<p>30 Songs</p>
+</div>
+
+</div>
+
+<div class="playlist">
+
+<img src="images/morning.jpg">
+
+<div>
+<b>Morning Vibes</b>
+<p>18 Songs</p>
+</div>
+
+</div>
+
+<div class="playlist">
+
+<img src="images/gospel.jpg">
+
+<div>
+<b>Gospel Hits</b>
+<p>40 Songs</p>
+</div>
+
+</div>
+
+<div class="playlist">
+
+<img src="images/chill.jpg">
+
+<div>
+<b>Chill Vibes</b>
+<p>22 Songs</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="premium">
+
+<i class="fa-solid fa-crown"></i>
+
+<h3>Go Premium</h3>
+
+<p>
+Listen to music without limits and ads.
+</p>
+
+<button>
+Try Premium
+</button>
+
+</div>
+    
+<button id="logoutBtn">
+Logout
+</button>
+
+</aside>
+
+<div class="sidebar-overlay"></div>
+
+<!-- ==========================
+MAIN
+========================== -->
+
+<main class="main">
+
+<!-- TOPBAR -->
+
+<header class="topbar">
+
+<button class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+<div class="profile">
+
+<i class="fa-regular fa-bell"></i>
+
+<img src="images/profile.jpg">
+
+<span>Atuma Gilbert</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</div>
+
+<div class="search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search charts, artists, songs...">
+
+</div>
+
+</header>
+
+<!-- ==========================
+PAGE HEADER
+========================== -->
+
+<section class="charts-header">
+
+<span class="badge">
+<i class="fa-solid fa-fire"></i>
+Updated Today
+</span>
+
+<h1>
+<i class="fa-solid fa-chart-line"></i>
+Top Music Charts
+</h1>
+
+<p>
+Discover today's biggest songs, trending artists and top albums from around the world.
+</p>
+
+</section>
+
+<!-- ==========================
+TOP 10 SONGS
+========================== -->
+
+<section class="charts-section">
+
+<div class="section-title">
+
+<h2>🔥 Top 10 Songs</h2>
+
+<a href="#">See All</a>
+
+</div>
+
+<div class="charts-list">
+
+<div class="chart-row">
+
+<div class="rank">1</div>
+
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+
+<div class="song-info">
+
+<h3>Gratitude</h3>
+
+<p>Brandon Lake</p>
+
+</div>
+
+<span>4:12</span>
+
+<button class="play-btn">
+<i class="fa-solid fa-play"></i>
+</button>
+
+</div>
+
+<div class="chart-row">
+
+<div class="rank">2</div>
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81">
+
+<div class="song-info">
+
+<h3>Holy Forever</h3>
+
+<p>Chris Tomlin</p>
+
+</div>
+
+<span>5:03</span>
+
+<button class="play-btn">
+<i class="fa-solid fa-play"></i>
+</button>
+
+</div>
+
+<div class="chart-row">
+
+<div class="rank">3</div>
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+<div class="song-info">
+
+<h3>Way Maker</h3>
+
+<p>Sinach</p>
+
+</div>
+
+<span>4:39</span>
+
+<button class="play-btn">
+<i class="fa-solid fa-play"></i>
+</button>
+
+</div>
+
+<div class="chart-row">
+
+<div class="rank">4</div>
+
+<img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b">
+
+<div class="song-info">
+
+<h3>Jireh</h3>
+
+<p>Maverick City</p>
+
+</div>
+
+<span>6:10</span>
+
+<button class="play-btn">
+<i class="fa-solid fa-play"></i>
+</button>
+
+</div>
+
+<div class="chart-row">
+
+<div class="rank">5</div>
+
+<img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819">
+
+<div class="song-info">
+
+<h3>Praise</h3>
+
+<p>Elevation Worship</p>
+
+</div>
+
+<span>5:25</span>
+
+<button class="play-btn">
+<i class="fa-solid fa-play"></i>
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+GLOBAL CHARTS
+========================== -->
+
+<section class="charts-section">
+
+<div class="section-title">
+
+<h2>🌍 Global Charts</h2>
+
+<a href="#">See All</a>
+
+</div>
+
+<div class="chart-cards">
+
+<div class="chart-card">
+
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+
+<h3>Global Top 50</h3>
+
+<p>The world's biggest hits this week.</p>
+
+<button>
+<i class="fa-solid fa-play"></i>
+Play Playlist
+</button>
+
+</div>
+
+<div class="chart-card">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81">
+
+<h3>Viral 50</h3>
+
+<p>Fast-rising songs everyone is listening to.</p>
+
+<button>
+<i class="fa-solid fa-play"></i>
+Play Playlist
+</button>
+
+</div>
+
+<div class="chart-card">
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+<h3>Christian Hits</h3>
+
+<p>Most streamed worship songs worldwide.</p>
+
+<button>
+<i class="fa-solid fa-play"></i>
+Play Playlist
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Continue in Part 2 -->
+  <!-- ===========================
+TOP 100 GLOBAL
+=========================== -->
+
+<section class="charts-section">
+
+    <div class="section-title">
+        <h2>🌍 Top 100 Global</h2>
+        <a href="#">View All</a>
+    </div>
+
+    <div class="chart-list">
+
+        <div class="chart-item">
+            <span class="rank">1</span>
+            <img src="images/song1.jpg" alt="">
+            <div class="chart-info">
+                <h3>Gratitude</h3>
+                <p>Brandon Lake</p>
+            </div>
+            <span class="duration">4:12</span>
+            <button><i class="fa-solid fa-play"></i></button>
+        </div>
+
+        <div class="chart-item">
+            <span class="rank">2</span>
+            <img src="images/song2.jpg" alt="">
+            <div class="chart-info">
+                <h3>Holy Forever</h3>
+                <p>Chris Tomlin</p>
+            </div>
+            <span class="duration">5:01</span>
+            <button><i class="fa-solid fa-play"></i></button>
+        </div>
+
+        <div class="chart-item">
+            <span class="rank">3</span>
+            <img src="images/song3.jpg" alt="">
+            <div class="chart-info">
+                <h3>Way Maker</h3>
+                <p>Sinach</p>
+            </div>
+            <span class="duration">4:39</span>
+            <button><i class="fa-solid fa-play"></i></button>
+        </div>
+
+        <div class="chart-item">
+            <span class="rank">4</span>
+            <img src="images/song4.jpg" alt="">
+            <div class="chart-info">
+                <h3>Praise</h3>
+                <p>Elevation Worship</p>
+            </div>
+            <span class="duration">4:52</span>
+            <button><i class="fa-solid fa-play"></i></button>
+        </div>
+
+        <div class="chart-item">
+            <span class="rank">5</span>
+            <img src="images/song5.jpg" alt="">
+            <div class="chart-info">
+                <h3>Goodness of God</h3>
+                <p>CeCe Winans</p>
+            </div>
+            <span class="duration">4:26</span>
+            <button><i class="fa-solid fa-play"></i></button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+TOP ALBUMS
+=========================== -->
+
+<section class="charts-section">
+
+    <div class="section-title">
+        <h2>💿 Top Albums</h2>
+        <a href="#">See All</a>
+    </div>
+
+    <div class="albums-grid">
+
+        <div class="album-card">
+            <img src="images/album1.jpg" alt="">
+            <h3>House of Worship</h3>
+            <p>Joshua Aaron</p>
+        </div>
+
+        <div class="album-card">
+            <img src="images/album2.jpg" alt="">
+            <h3>Kingdom Sound</h3>
+            <p>Brandon Lake</p>
+        </div>
+
+        <div class="album-card">
+            <img src="images/album3.jpg" alt="">
+            <h3>Victory</h3>
+            <p>Sinach</p>
+        </div>
+
+        <div class="album-card">
+            <img src="images/album4.jpg" alt="">
+            <h3>Hope</h3>
+            <p>CeCe Winans</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+TOP ARTISTS
+=========================== -->
+
+<section class="charts-section">
+
+    <div class="section-title">
+        <h2>🎤 Top Artists</h2>
+        <a href="#">See All</a>
+    </div>
+
+    <div class="artists-grid">
+
+        <div class="artist-card">
+            <img src="images/artist1.jpg" alt="">
+            <h3>Brandon Lake</h3>
+            <p>#1 Artist</p>
+        </div>
+
+        <div class="artist-card">
+            <img src="images/artist2.jpg" alt="">
+            <h3>Mercy Chinwo</h3>
+            <p>#2 Artist</p>
+        </div>
+
+        <div class="artist-card">
+            <img src="images/artist3.jpg" alt="">
+            <h3>Chris Tomlin</h3>
+            <p>#3 Artist</p>
+        </div>
+
+        <div class="artist-card">
+            <img src="images/artist4.jpg" alt="">
+            <h3>Sinach</h3>
+            <p>#4 Artist</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+TRENDING PLAYLISTS
+=========================== -->
+
+<section class="charts-section">
+
+    <div class="section-title">
+        <h2>🔥 Trending Playlists</h2>
+        <a href="#">Browse</a>
+    </div>
+
+    <div class="albums-grid">
+
+        <div class="album-card">
+            <img src="images/playlist1.jpg" alt="">
+            <h3>Morning Worship</h3>
+            <p>45 Songs</p>
+        </div>
+
+        <div class="album-card">
+            <img src="images/playlist2.jpg" alt="">
+            <h3>Top Gospel</h3>
+            <p>50 Songs</p>
+        </div>
+
+        <div class="album-card">
+            <img src="images/playlist3.jpg" alt="">
+            <h3>Afro Gospel</h3>
+            <p>38 Songs</p>
+        </div>
+
+        <div class="album-card">
+            <img src="images/playlist4.jpg" alt="">
+            <h3>Sunday Praise</h3>
+            <p>42 Songs</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>
+                <i class="fa-solid fa-music"></i>
+                Melody Music
+            </h2>
+
+            <p>
+                Stream millions of songs, discover amazing artists, create playlists and enjoy music anywhere.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Browse</h3>
+
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Charts</a>
+            <a href="#">Artists</a>
+            <a href="#">Albums</a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="year"></span> Melody Music. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="scripts/year.js"></script>
+<script src="scripts/sidebar.js"></script>
+<script src="scripts/charts.js"></script>
+<script src="scripts/logout.js"></script>
+    
+</main>
+
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lyrics | Melody Music</title>
+
+<!-- Styles -->
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/logout.css">
+<link rel="stylesheet" href="styles/lyrics.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+SIDEBAR
+========================== -->
+
+<aside class="sidebar">
+
+<button class="close-btn">
+<i class="fa-solid fa-xmark"></i>
+</button>
+
+<!-- LOGO -->
+
+<div class="logo">
+
+<i class="fa-solid fa-music"></i>
+
+<div>
+
+<h2>Melody</h2>
+
+<span>
+Feel the Music
+</span>
+
+</div>
+
+</div>
+
+<!-- MENU -->
+
+<nav>
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+
+<a href="explore.html">
+<i class="fa-solid fa-compass"></i>
+Explore
+</a>
+
+<a href="charts.html">
+<i class="fa-solid fa-chart-simple"></i>
+Charts
+</a>
+
+<a href="radio.html">
+<i class="fa-solid fa-radio"></i>
+Radio
+</a>
+
+<a href="new-releases.html">
+<i class="fa-solid fa-compact-disc"></i>
+New Releases
+</a>
+
+<a href="genres.html">
+<i class="fa-solid fa-grip"></i>
+Genres
+</a>
+
+</nav>
+
+<h4>YOUR LIBRARY</h4>
+
+<div class="library">
+
+<a href="favorites.html">
+<i class="fa-regular fa-heart"></i>
+Favorites
+</a>
+
+<a href="playlists.html">
+<i class="fa-solid fa-list"></i>
+Playlists
+</a>
+
+<a href="albums.html">
+<i class="fa-solid fa-record-vinyl"></i>
+Albums
+</a>
+
+<a href="artists.html">
+<i class="fa-solid fa-microphone"></i>
+Artists
+</a>
+
+<a href="downloads.html">
+<i class="fa-solid fa-download"></i>
+Downloads
+</a>
+
+<a class="active" href="lyrics.html">
+<i class="fa-solid fa-music"></i>
+Lyrics
+</a>
+
+</div>
+
+<!-- PREMIUM -->
+
+<div class="premium">
+
+<i class="fa-solid fa-crown"></i>
+
+<h3>Go Premium</h3>
+
+<p>
+Listen without ads and enjoy unlimited music.
+</p>
+
+<button>
+Upgrade
+</button>
+
+</div>
+
+<!-- LOGOUT -->
+
+<button id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+<span>Logout</span>
+
+</button>
+
+</aside>
+
+<div class="sidebar-overlay"></div>
+
+<!-- ==========================
+MAIN CONTENT
+========================== -->
+
+<main class="main">
+
+<!-- TOPBAR -->
+
+<header class="topbar">
+
+<button class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<div class="search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="searchLyrics"
+placeholder="Search lyrics...">
+
+</div>
+
+<div class="profile">
+
+<i class="fa-regular fa-bell"></i>
+
+<img
+src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop"
+alt="Profile">
+
+<span>
+Atuma Gilbert
+</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</div>
+
+</header>
+
+<!-- PAGE HEADER -->
+
+<section class="page-header">
+
+<div>
+
+<h1>
+
+<i class="fa-solid fa-microphone-lines"></i>
+
+Lyrics
+
+</h1>
+
+<p>
+
+Read and sing along with your favorite songs.
+
+</p>
+
+</div>
+
+</section>
+    
+    <!-- ==========================
+LYRICS CARD
+========================== -->
+
+<section class="lyrics-card">
+
+<div class="song">
+
+<img
+id="cover"
+src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=500&auto=format&fit=crop"
+alt="Album Cover">
+
+<h2 id="title">
+Song Title
+</h2>
+
+<p id="artist">
+Artist Name
+</p>
+
+<div class="song-actions">
+
+<button class="play-btn">
+
+<i class="fa-solid fa-play"></i>
+
+Play
+
+</button>
+
+<button class="like-btn">
+
+<i class="fa-regular fa-heart"></i>
+
+Favorite
+
+</button>
+
+<button class="share-btn">
+
+<i class="fa-solid fa-share-nodes"></i>
+
+Share
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<div class="lyrics-panel">
+
+<h3>
+
+<i class="fa-solid fa-microphone-lines"></i>
+
+Song Lyrics
+
+</h3>
+
+<div id="lyricsContainer">
+
+<p class="line active">
+Loading lyrics...
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==========================
+RELATED SONGS
+========================== -->
+
+<section class="related-section">
+
+<div class="section-title">
+
+<h2>
+
+<i class="fa-solid fa-headphones"></i>
+
+You May Also Like
+
+</h2>
+
+<a href="explore.html">
+See All
+</a>
+
+</div>
+
+
+
+<div class="related-grid">
+
+<div class="related-card">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400&auto=format&fit=crop">
+
+<h4>Holy Forever</h4>
+
+<p>Chris Tomlin</p>
+
+</div>
+
+
+
+<div class="related-card">
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=400&auto=format&fit=crop">
+
+<h4>Way Maker</h4>
+
+<p>Sinach</p>
+
+</div>
+
+
+
+<div class="related-card">
+
+<img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=400&auto=format&fit=crop">
+
+<h4>Jireh</h4>
+
+<p>Maverick City</p>
+
+</div>
+
+
+
+<div class="related-card">
+
+<img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&auto=format&fit=crop">
+
+<h4>Praise</h4>
+
+<p>Elevation Worship</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<!-- ==========================
+FOOTER
+========================== -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-brand">
+
+<h2>
+
+<i class="fa-solid fa-music"></i>
+
+Melody Music
+
+</h2>
+
+<p>
+
+Discover artists, stream songs, create playlists and enjoy unlimited music anywhere.
+
+</p>
+
+</div>
+
+
+
+<div class="footer-links">
+
+<h3>Browse</h3>
+
+<a href="index.html">Home</a>
+
+<a href="explore.html">Explore</a>
+
+<a href="charts.html">Charts</a>
+
+<a href="radio.html">Radio</a>
+
+<a href="genres.html">Genres</a>
+
+</div>
+
+
+
+<div class="footer-links">
+
+<h3>Support</h3>
+
+<a href="#">Help Center</a>
+
+<a href="#">Privacy Policy</a>
+
+<a href="#">Terms of Service</a>
+
+<a href="#">Contact Us</a>
+
+</div>
+
+
+
+<div class="footer-social">
+
+<h3>Follow Us</h3>
+
+<div class="social-icons">
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<p>
+
+© <span id="year"></span> Melody Music. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+
+
+<!-- SCRIPTS -->
+
+<script src="scripts/year.js"></script>
+<script src="scripts/sidebar.js"></script>
+<script src="scripts/lyrics.js"></script>
+<script type="module" src="scripts/logout.js"></script>
+
+</body>
+</html>

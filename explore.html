@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore | Melody Music</title>
+
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/explore.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+<link rel="stylesheet" href="styles/footer.css">    
+<link rel="stylesheet" href="styles/logout.css">
+    
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+TOP HEADER
+=========================== -->
+
+
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+<button class="close-btn">
+    <i class="fa-solid fa-xmark"></i>
+</button>
+<!-- LOGO -->
+<div class="logo">
+
+<i class="fa-solid fa-music"></i>
+
+<div>
+<h2>Melody</h2>
+<span>Feel the music</span>
+</div>
+
+</div>
+
+
+
+<!-- MENU -->
+
+<nav>
+
+
+<a href="index.html" class="active">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+
+
+<a href="explore.html">
+<i class="fa-solid fa-compass"></i>
+Explore
+</a>
+
+
+<a href="charts.html">
+<i class="fa-solid fa-chart-simple"></i>
+Charts
+</a>
+
+
+<a href="radio.html">
+<i class="fa-solid fa-radio"></i>
+Radio
+</a>
+
+
+<a href="new-releases.html">
+<i class="fa-solid fa-compact-disc"></i>
+New Releases
+</a>
+
+
+<a href="genres.html">
+<i class="fa-solid fa-grip"></i>
+Genres
+</a>
+
+
+</nav>
+
+
+
+<!-- LIBRARY -->
+
+<h4>YOUR LIBRARY</h4>
+
+
+<div class="library">
+
+
+<a href="favorites.html">
+<i class="fa-regular fa-heart"></i>
+Favorites
+</a>
+
+
+<a href="playlists.html">
+<i class="fa-solid fa-list"></i>
+Playlists
+</a>
+
+
+<a href="albums.html">
+<i class="fa-solid fa-circle-play"></i>
+Albums
+</a>
+
+
+<a href="artists.html">
+<i class="fa-solid fa-microphone"></i>
+Artists
+</a>
+
+
+<a href="downloads.html">
+<i class="fa-solid fa-download"></i>
+Downloads
+</a>
+
+
+</div>
+
+
+
+<!-- PLAYLISTS -->
+
+
+<div class="playlist-title">
+
+<h4>PLAYLISTS</h4>
+
+<button>
+<i class="fa-solid fa-plus"></i>
+</button>
+
+</div>
+
+
+
+<div class="playlists">
+
+
+<div class="playlist">
+
+<img src="images/favorite.jpg">
+
+<div>
+<b>My Favorite</b>
+<p>25 songs</p>
+</div>
+
+</div>
+
+
+
+<div class="playlist">
+
+<img src="images/workout.jpg">
+
+<div>
+<b>Workout Mix</b>
+<p>30 songs</p>
+</div>
+
+</div>
+
+
+
+<div class="playlist">
+
+<img src="images/morning.jpg">
+
+<div>
+<b>Morning Vibes</b>
+<p>18 songs</p>
+</div>
+
+</div>
+
+
+
+<div class="playlist">
+
+<img src="images/gospel.jpg">
+
+<div>
+<b>Gospel Hits</b>
+<p>40 songs</p>
+</div>
+
+</div>
+
+
+
+<div class="playlist">
+
+<img src="images/chill.jpg">
+
+<div>
+<b>Chill Vibes</b>
+<p>22 songs</p>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- PREMIUM CARD -->
+
+<div class="premium">
+
+
+<i class="fa-solid fa-crown"></i>
+
+
+<h3>
+Go Premium
+</h3>
+
+
+<p>
+Listen to music without limits and ads.
+</p>
+
+
+<button>
+Try Premium
+</button>
+
+
+</div>
+<button id="logoutBtn">
+Logout
+</button>
+
+</aside>
+  
+  <div class="sidebar-overlay"></div>
+
+<!-- MAIN CONTENT -->
+
+<main class="main">
+
+
+<!-- TOP BAR -->
+<header class="topbar">
+
+    <button class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+
+    <div class="profile">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <img src="images/profile.jpg">
+
+        <span>
+            Atuma Gilbert
+        </span>
+
+        <i class="fa-solid fa-chevron-down"></i>
+
+    </div>
+
+
+    <div class="search">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input 
+        type="text"
+        placeholder="Search for songs, artists, albums..."
+        >
+
+    </div>
+
+</header>
+
+<!-- ===========================
+PAGE TITLE
+=========================== -->
+
+<section class="page-title">
+
+<h1>
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</h1>
+
+<p>
+
+Discover millions of songs, artists, albums and playlists.
+
+</p>
+
+</section>
+
+
+
+<!-- ===========================
+SEARCH
+=========================== -->
+
+    <!---<section class="search-box">
+
+<div class="search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search songs, artists, albums...">
+
+</div>
+
+</section>--->
+
+
+
+<!-- ===========================
+TRENDING SEARCHES
+=========================== -->
+
+<section class="explore-section">
+
+<div class="section-title">
+
+<h2>
+
+🔥 Trending Searches
+
+</h2>
+
+<a href="#">
+
+See All
+
+</a>
+
+</div>
+
+<div class="tags">
+
+<span>Taylor Swift</span>
+
+<span>Burna Boy</span>
+
+<span>Joshua Aaron</span>
+
+<span>Mercy Chinwo</span>
+
+<span>Brandon Lake</span>
+
+<span>Sinach</span>
+
+<span>Rema</span>
+
+<span>Chris Tomlin</span>
+
+</div>
+
+</section>
+
+
+
+<!-- ===========================
+GENRES
+=========================== -->
+
+<section class="explore-section">
+
+<div class="section-title">
+
+<h2>
+
+🎵 Browse Genres
+
+</h2>
+
+<a href="#">
+
+See All
+
+</a>
+
+</div>
+
+<div class="genres">
+
+<div class="genre-card">
+
+<i class="fa-solid fa-cross"></i>
+
+<h3>Gospel</h3>
+
+</div>
+
+<div class="genre-card">
+
+<i class="fa-solid fa-fire"></i>
+
+<h3>Afrobeats</h3>
+
+</div>
+
+<div class="genre-card">
+
+<i class="fa-solid fa-guitar"></i>
+
+<h3>Rock</h3>
+
+</div>
+
+<div class="genre-card">
+
+<i class="fa-solid fa-headphones"></i>
+
+<h3>Pop</h3>
+
+</div>
+
+<div class="genre-card">
+
+<i class="fa-solid fa-microphone"></i>
+
+<h3>Hip Hop</h3>
+
+</div>
+
+<div class="genre-card">
+
+<i class="fa-solid fa-drum"></i>
+
+<h3>Jazz</h3>
+
+</div>
+
+<div class="genre-card">
+
+<i class="fa-solid fa-music"></i>
+
+<h3>Classical</h3>
+
+</div>
+
+<div class="genre-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<h3>Love Songs</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ===========================
+TRENDING THIS WEEK
+=========================== -->
+
+<section class="explore-section">
+
+<div class="section-title">
+
+<h2>
+
+🔥 Trending This Week
+
+</h2>
+
+<a href="#">
+
+See All
+
+</a>
+
+</div>
+
+<div class="albums">
+
+<div class="album-card">
+
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+
+<h3>House of Worship</h3>
+
+<p>Joshua Aaron</p>
+
+</div>
+
+<div class="album-card">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81">
+
+<h3>Voices in Harmony</h3>
+
+<p>Brandon Lake</p>
+
+</div>
+
+<div class="album-card">
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+<h3>Praise Forever</h3>
+
+<p>Chris Tomlin</p>
+
+</div>
+
+<div class="album-card">
+
+<img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b">
+
+<h3>Grace</h3>
+
+<p>Mercy Chinwo</p>
+
+</div>
+
+<div class="album-card">
+
+<img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819">
+
+<h3>Victory</h3>
+
+<p>Sinach</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ===========================
+CONTINUE IN PART 2
+=========================== -->
+<!-- ===========================
+FEATURED ARTISTS
+=========================== -->
+
+<section class="explore-section">
+
+    <div class="section-title">
+
+        <h2>⭐ Featured Artists</h2>
+
+        <a href="#">See All</a>
+
+    </div>
+
+    <div class="artists">
+
+        <div class="artist-card">
+
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
+
+            <h3>Brandon Lake</h3>
+
+            <p>Christian Artist</p>
+
+        </div>
+
+        <div class="artist-card">
+
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330">
+
+            <h3>Mercy Chinwo</h3>
+
+            <p>Gospel Artist</p>
+
+        </div>
+
+        <div class="artist-card">
+
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d">
+
+            <h3>Chris Tomlin</h3>
+
+            <p>Worship Leader</p>
+
+        </div>
+
+        <div class="artist-card">
+
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb">
+
+            <h3>Sinach</h3>
+
+            <p>Gospel Artist</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+NEW RELEASES
+=========================== -->
+
+<section class="explore-section">
+
+    <div class="section-title">
+
+        <h2>💿 New Releases</h2>
+
+        <a href="#">See All</a>
+
+    </div>
+
+    <div class="albums">
+
+        <div class="album-card">
+
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81">
+
+            <h3>Kingdom Sound</h3>
+
+            <p>Joshua Aaron</p>
+
+        </div>
+
+        <div class="album-card">
+
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+            <h3>Grace & Glory</h3>
+
+            <p>Elevation Worship</p>
+
+        </div>
+
+        <div class="album-card">
+
+            <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b">
+
+            <h3>Hope</h3>
+
+            <p>CeCe Winans</p>
+
+        </div>
+
+        <div class="album-card">
+
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+
+            <h3>Victory</h3>
+
+            <p>Maverick City</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+POPULAR RADIO
+=========================== -->
+
+<section class="explore-section">
+
+    <div class="section-title">
+
+        <h2>📻 Live Radio</h2>
+
+        <a href="#">See All</a>
+
+    </div>
+
+    <div class="radio-grid">
+
+        <div class="radio-card">
+
+            <i class="fa-solid fa-radio"></i>
+
+            <h3>Worship Radio</h3>
+
+            <p>24/7 Worship Music</p>
+
+        </div>
+
+        <div class="radio-card">
+
+            <i class="fa-solid fa-broadcast-tower"></i>
+
+            <h3>Afro Gospel FM</h3>
+
+            <p>Live Broadcast</p>
+
+        </div>
+
+        <div class="radio-card">
+
+            <i class="fa-solid fa-headphones"></i>
+
+            <h3>Christian Hits</h3>
+
+            <p>Top Worship Songs</p>
+
+        </div>
+
+        <div class="radio-card">
+
+            <i class="fa-solid fa-music"></i>
+
+            <h3>Melody Live</h3>
+
+            <p>Trending Music</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+RECOMMENDED SONGS
+=========================== -->
+
+<section class="explore-section">
+
+    <div class="section-title">
+
+        <h2>🎵 Recommended For You</h2>
+
+        <a href="#">See All</a>
+
+    </div>
+
+    <div class="songs">
+
+        <div class="song-card">
+
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819">
+
+            <h3>Gratitude</h3>
+
+            <p>Brandon Lake</p>
+
+        </div>
+
+        <div class="song-card">
+
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81">
+
+            <h3>Holy Forever</h3>
+
+            <p>Chris Tomlin</p>
+
+        </div>
+
+        <div class="song-card">
+
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+            <h3>Way Maker</h3>
+
+            <p>Sinach</p>
+
+        </div>
+
+        <div class="song-card">
+
+            <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b">
+
+            <h3>Jireh</h3>
+
+            <p>Maverick City</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+MOOD PLAYLISTS
+=========================== -->
+
+<section class="explore-section">
+
+    <div class="section-title">
+
+        <h2>🎧 Mood Playlists</h2>
+
+    </div>
+
+    <div class="tags">
+
+        <span>😊 Happy</span>
+
+        <span>😌 Chill</span>
+
+        <span>💪 Workout</span>
+
+        <span>🙏 Worship</span>
+
+        <span>❤️ Love</span>
+
+        <span>🌙 Sleep</span>
+
+        <span>🎉 Party</span>
+
+        <span>🚗 Road Trip</span>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+BROWSE BY COUNTRY
+=========================== -->
+
+<section class="explore-section">
+
+    <div class="section-title">
+
+        <h2>🌍 Browse by Country</h2>
+
+    </div>
+
+    <div class="tags">
+
+        <span>🇺🇬 Uganda</span>
+
+        <span>🇳🇬 Nigeria</span>
+
+        <span>🇰🇪 Kenya</span>
+
+        <span>🇿🇦 South Africa</span>
+
+        <span>🇺🇸 United States</span>
+
+        <span>🇬🇧 United Kingdom</span>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+FOOTER
+=========================== -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>
+                <i class="fa-solid fa-music"></i>
+                Melody Music
+            </h2>
+
+            <p>
+                Stream millions of songs, discover new artists, create playlists, and enjoy music anytime, anywhere.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Browse</h3>
+
+            <a href="#">Home</a>
+
+            <a href="#">Trending</a>
+
+            <a href="#">Artists</a>
+
+            <a href="#">Albums</a>
+
+            <a href="#">Radio</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Terms of Service</a>
+
+            <a href="#">Contact Us</a>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ <div class="footer-bottom">
+
+    <p>
+        © <span id="year"></span> Melody Music. All Rights Reserved.
+    </p>
+
+</div>
+
+</footer>
+
+<script src="scripts/year.js"></script>
+<script src="scripts/explore.js"></script>
+<script src="scripts/sidebar.js"></script>
+    <script src="scripts/app.js"></script>  
+    <script src="scripts/logout.js"></script>
+   
+</body>
+</html>
